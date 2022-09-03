@@ -1,7 +1,6 @@
 # medical-standard-voc-translator
 
 
-
 GIT_HUB_ENCICLOPEDIA Vocabularies:
 
 VOCABULARIES COVERED:
@@ -23,14 +22,18 @@ OMOP Extension	-	OMOP Extension (OHDSI)<br>
 
 
 
-Objective: To translate from one standard vocabulary to another standard vocabulary through OMOP vocabulary resources.
 
 
-Dictionaries:
+Objective: The objective of this repository is to guide the translation from one standard vocabulary to another standard vocabulary through OMOP vocabulary resources.
 
-CONCEPT_DIC: Contains the relation between concept_code and concept_id.
+FILES REQUIRED: Register, log in and select the desired  vocabulary source and target from [Athena](https://athena.ohdsi.org/vocabulary/list)
 
-CONCEPT_RELATIONSHIP: Contains the relationship between the concept_id.
+
+The Athena web app will send a link to download a ZIP file that will include the next files:
+
+CONCEPT.csv: Contains the relation between concept_code and concept_id.
+CONCEPT_RELATIONSHIP.csv: This contains the relationship between the concept_id.
+This files are dictionaries that need to be stored in the same folder as the pyhton notebook. 
 
 
 Glossary:
@@ -39,7 +42,7 @@ concept_id: code from OMOP that represents one concept.
 
 OMOP :
 
-Every concept_code has their own concept_id. They are not crossed: For the same concept(amoxicillin 250mg Oral Capsule) there will be different OMOP codes (one for each vocabulary), different concept_id. Those  concept_id(s) are related in the dictionary concept_relationship.
+Every concept_code has its concept_id. The concept_code does not converge to a concept_id: For the same concept(amoxicillin 250mg Oral Capsule), there will be different OMOP codes (one for each vocabulary) and different concept_id. Those  concept_id(s) are related in the dictionary concept_relationship.
 
 
 Example:
@@ -47,7 +50,7 @@ We want to translate [amoxicillin 250 MG Oral Capsule] from RxNorm code to NDC c
 
 Step 1:
 Translate the source code to the omop code.
-CONCEPT_CODE(SOURCE CODE)--  CONCEPT_DIC  --> CONCEPT_ID(OMOP CODE)
+CONCEPT_CODE(SOURCE CODE)--  CONCEPT  --> CONCEPT_ID(OMOP CODE)
 
 
  
@@ -73,7 +76,7 @@ Step 3:
 
 Use the new concept_id_2  to obtain the concept_code of the target vocabulary 
 
-CONCEPT_ID_2(OMOP CODE FROM TARGET VOCAB) -->CONCEPT_DIC--> CONCEPT_CODE(TARGET CODE)
+CONCEPT_ID_2(OMOP CODE FROM TARGET VOCAB) -->CONCEPT--> CONCEPT_CODE(TARGET CODE)
 
 | VOCAB | concept_id| concept_code (NDC) | 
 | -------- | ------------ | ------- |
