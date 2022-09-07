@@ -41,7 +41,7 @@ ICD9CM	-	International Classification of Diseases, Ninth Revision, Clinical Modi
 OMOP Extension	-	OMOP Extension (OHDSI)<br>
 
 
-DOWNLOADING THE DICTIONARIES:
+### DOWNLOADING THE DICTIONARIES:
 
 In a  previous step, the user will need to download the files containing the dictionaries containing the selected vocabularies.
 
@@ -54,7 +54,7 @@ CONCEPT_RELATIONSHIP.csv: This dictionary contains the relationships between the
 These files are dictionaries that need to be stored in the same folder as the python notebook. 
 
 
-HOW OMOP VOCABULARIES WORK:
+### HOW OMOP VOCABULARIES WORK:
 
 Definitions:
 `concept_code`: code from the source vocabulary that represents one concept. 
@@ -71,7 +71,7 @@ amoxicillin 250 MG Oral Capsule | RX NORM | 308182      | 19073183 |
  Every `concept_code` has a different `concept_id` even though they represent the same concept in the real world. In the above table, the same drug has two different `concept_code`s for each vocabulary and also a different `concept_id`.
 
 
-Example of translation:
+### Example of translation:
 We want to translate [amoxicillin 250 MG Oral Capsule] from RxNorm code to NDC code.
 
 Step 1:
