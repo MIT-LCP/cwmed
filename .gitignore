@@ -5,4 +5,7 @@ concept_relationship.csv
 # OSX MAC FILE
 .DS_Store
 
+# ipynb chekcpoints ignore
+
+.ipynb_checkpoints/*.*
 
