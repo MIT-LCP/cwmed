@@ -27,7 +27,8 @@ class Standard_vocab_translator(object):
         
         
         # Load your source file.
-        source_voc=pd.read_csv(source_file,converters={source_file_code_column:str})
+        source_voc = pd.read_csv(source_file,converters={source_file_code_column:str})
+        self.source_voc = source_voc
         
         #1 Translate your source vocabulary code(concept_name) TO concept_id(NDC).
         #replace left_on value for the source code columns name.
