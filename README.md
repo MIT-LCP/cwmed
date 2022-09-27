@@ -5,6 +5,7 @@ The objective of this repository is to guide the translation from one standard v
 
 Includes:
 - voc_to_voc_translator.ipynb
+- crosswalk.py
 - README.md
 
 
