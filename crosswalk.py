@@ -1,7 +1,37 @@
+"""Crosswalk using the OMOP vocabulary files.
+
+Module for walking between medical vocabularies (e.g. RxNorm, NDC). Uses
+standardized vocabulary files downloaded from the OHDSI website:
+https://www.ohdsi.org/analytic-tools/athena-standardized-vocabularies/
+"""
+
 import pandas as pd
 
 
 class Standard_vocab_translator(object):
+    """Merge tables to create a crosswalk between two vocabularies.
+
+    Merge a source and target standardized vocabulary. The final merged table
+    can then be outputted to a CSV. Requires vocabulary and concept
+    relationship files downloaded from the OHDSI website.
+
+    Args:
+        source_vocabulary (str): Filename of the source vocabulary.
+        target_vocabulary (str): Filename of the target vocabulary.
+        source_file (str): Path to the source vocabulary.
+        source_file_code_column (str): Column in source vocabulary that will 
+            be mapped to the target vocabulary.
+
+    Attributes:
+        source_vocabulary (str): Filename of the source vocabulary.
+        target_vocabulary (str): Filename of the target vocabulary.
+        vocab_list (pd.DataFrame): List of unique concept IDs in the
+            concept.csv file.
+        source_voc (pd.DataFrame): Source vocabulary file loaded from CSV.
+        rel_target_merge (pd.DataFrame): Merged table of the source and target.
+
+    """
+
     def __init__(self, source_vocabulary:str, target_vocabulary:str, source_file:str, source_file_code_column:str):
         # Vocabulary Variables
         self.source_vocabulary = source_vocabulary
@@ -53,15 +83,29 @@ class Standard_vocab_translator(object):
                                   'concept_id_{}'.format(target_vocabulary),target_vocabulary]
         
         self.rel_target_merge = rel_target_merge
-        
+
     def print_dic(self):
+        """Prints the merged table.
+
+        Prints a pd.DataFrame that maps concepts between the source and target
+        vocabularies.
+        """
         print(self.rel_target_merge)
-    
-    def save_dic(self,target_file):
+
+    def save_dic(self, target_file):
+        """Saves the merged table to CSV.
+
+        Saves a pd.DataFrame that maps concepts between the source and target
+        vocabularies.
+        """
         self.rel_target_merge.to_csv(target_file)
-    
+
     def failed_mappings(self):
-        failed_mappings = self.rel_target_merge[self.rel_target_merge['concept_id_{}'.format(self.source_vocabulary)].isnull()]
+        """Prints a table of failed mappings.
+
+        Prints a pd.DataFrame that lists concepts that could not be matched 
+        between the source and target vocabularies.
+        """
+        failed_mappings = self.rel_target_merge[self.rel_target_merge['concept_id_{}'.format(
+            self.source_vocabulary)].isnull()]
         failed_mappings.to_csv("failed_mappings.csv")
-        
-  
