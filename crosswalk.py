@@ -6,19 +6,25 @@ https://www.ohdsi.org/analytic-tools/athena-standardized-vocabularies/
 """
 
 import pandas as pd
-import os 
+import os
 import requests
 import zipfile
 import io
-import crosswalk as cw
+
 
 def download_data():
-    url=input('url:')
-    response= requests.get(url)
+    '''
+    Downloads and unzips two required files
+    (1) concept.csv and (2) concept_relationship.csv
+    using the url link emailed to registered users on the athena website.
+    '''
+    url = input('url:')
+    response = requests.get(url)
     z = zipfile.ZipFile(io.BytesIO(response.content))
-    data_directory= os.getcwd()+'/data'
-    z.extractall(data_directory, 
-members=[ i  for i in z.namelist() if i in ('CONCEPT.csv','CONCEPT_RELATIONSHIP.csv')])
+    data_directory = os.getcwd()+'/data'
+    z.extractall(data_directory, members=[i for i in z.namelist()
+                 if i in ('CONCEPT.csv', 'CONCEPT_RELATIONSHIP.csv')])
+
 
 class Standard_vocab_translator(object):
     """Merge tables to create a crosswalk between two vocabularies.
