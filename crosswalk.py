@@ -20,7 +20,7 @@ def download_data():
     z.extractall(data_directory, 
 members=[ i  for i in z.namelist() if i in ('CONCEPT.csv','CONCEPT_RELATIONSHIP.csv')])
 
-class Standard_vocab_translator(object):
+class VocabTranslator(object):
     """Merge tables to create a crosswalk between two vocabularies.
 
     Merge a source and target standardized vocabulary. The final merged table
