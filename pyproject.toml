@@ -23,4 +23,4 @@ dependencies = [
 "Homepage" = "https://github.com/xborrat/medical-standard-voc-translator"
 "Bug Tracker" = "https://github.com/xborrat/medical-standard-voc-translator"
 
-
+pip install .
