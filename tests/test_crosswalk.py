@@ -11,10 +11,3 @@ def test_crosswalk_between_ndc_rxnorm():
     rxnorm_code=vocab.rel_target_merge[vocab.rel_target_merge.ndc==ndc_source]['RxNorm']
     expected_rxnorm = '313002'
     assert expected_rxnorm == rxnorm_code
-
-
-
-
-
-
-
