@@ -57,7 +57,7 @@ class VocabTranslator(object):
         self.target_vocabulary = target_vocabulary
 
         # Concept dictionary load.
-        concept = pd.read_csv("CONCEPT.csv", sep="\\t",
+        concept = pd.read_csv("CONCEPT.csv", sep="\\t", error_bad_lines=False,
                               converters={"concept_id": str,
                                           "concept_code": str},
                               engine='python')
@@ -67,6 +67,7 @@ class VocabTranslator(object):
         # Concept relationship dictionary load.
         concept_rel = pd.read_csv(
             "CONCEPT_RELATIONSHIP.csv", sep="\\t",
+            error_bad_lines=False,
             converters={"concept_id_1": str,
                         "concept_id_2": str}, engine='python')
 
