@@ -1,13 +1,14 @@
-import pytest
-
-from crosswalk import VocabTranslator
+import pandas as pd
 
 def test_crosswalk_between_ndc_rxnorm():
     """
-    Test that an ndc code from the source file is mapped to the expected rxnorm code in the common vocabulary.
+    Test that the source code, e.g. ndc code of'00074798427' from the source file 
+    is mapped to the expected target standardized code, e.g. rxnorm code, '313002'
+    in the source to target file.
     """
-    vocab = VocabTranslator('NDC','RxNorm','source_2.csv','ndc')
-    ndc_source = vocab.source_voc.ndc[16]
-    rxnorm_code = vocab.rel_target_merge[vocab.rel_target_merge.ndc==ndc_source]['RxNorm'].iloc[0]
-    expected_rxnorm = '313002'
-    assert expected_rxnorm == rxnorm_code
+    expected_target_code = int(313002) 
+
+    target_voc_df = pd.read_csv('source_to_target_example.csv',converters={'ndc': str})
+    target_code = target_voc_df[target_voc_df.ndc=='00074798427']['RxNorm'].iloc[0]
+
+    assert expected_target_code == target_code
