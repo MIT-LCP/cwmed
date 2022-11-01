@@ -1,14 +1,15 @@
 import pandas as pd
+import crosswalk as cw
 
-def test_crosswalk_between_ndc_rxnorm():
+def test_crosswalk_between_icd10_snowmed():
     """
-    Test that the source code, e.g. ndc code of'00074798427' from the source file 
-    is mapped to the expected target standardized code, e.g. rxnorm code, '313002'
+    Test that the source code, e.g. icd10 code of ''A04.4'' from the source file 
+    is mapped to the expected target standardized code, e.g. snomed code, '111839008'
     in the source to target file.
     """
-    expected_target_code = int(313002) 
+    vocab = cw.VocabTranslator('ICD10CM','SNOMED','tests/data/source_icd10.csv','icd10')
+    icd10_source_code = vocab.source_voc[vocab.source_voc.icd10 == 'A04.4']['icd10'].iloc[0]
+    snowmed_target_code = vocab.rel_target_merge[vocab.rel_target_merge.icd10 == icd10_source_code]['SNOMED'].iloc[0]
+    expected_target_code = '111839008'  
 
-    target_voc_df = pd.read_csv('source_to_target_example.csv',converters={'ndc': str})
-    target_code = target_voc_df[target_voc_df.ndc=='00074798427']['RxNorm'].iloc[0]
-
-    assert expected_target_code == target_code
+    assert expected_target_code == snowmed_target_code
