@@ -1,7 +1,7 @@
 import pandas as pd
 import crosswalk as cw
 
-def test_crosswalk_between_icd10_snowmed():
+def test_crosswalk_between_icd10_snomed():
     """
     Test that the source code, e.g. icd10 code of ''A04.4'' from the source file 
     is mapped to the expected target standardized code, e.g. snomed code, '111839008'
