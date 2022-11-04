@@ -26,16 +26,15 @@ def download_data():
                  if i in ('CONCEPT.csv', 'CONCEPT_RELATIONSHIP.csv')])
 
 def check_concept_file_source_target_values(concept_filepath):
-     '''
-     Checks avaliable source and target vocabulary values from Athena.
-     '''
+    """Checks available source and target vocabulary values from Athena.
+    """
+    
+    concepts = pd.read_csv(concept_filepath, sep='\t')
 
-     concepts = pd.read_csv(concept_filepath, sep='\t')
+    # List all vocabularies in concept dictionary.
+    unique_vocab_values = concepts["vocabulary_id"].unique()
 
-     # List all vocabularies in concept dictionary.
-     unique_vocab_values = concepts["vocabulary_id"].unique()
-
-     return unique_vocab_values
+    return unique_vocab_values
 
 class VocabTranslator(object):
     """Merge tables to create a crosswalk between two vocabularies.
