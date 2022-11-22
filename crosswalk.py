@@ -127,7 +127,8 @@ class VocabTranslator(object):
             'concept_id_x',
             'concept_id_1',
             'concept_id_2',
-            'concept_code']]
+            'concept_code',
+            'concept_name']]
         # Renaming columns for clarity
 
         rel_target_merge.columns = [
@@ -135,7 +136,9 @@ class VocabTranslator(object):
             'concept_id_x',
             'concept_id_{}'.format(self.source_vocab_value),
             'concept_id_{}'.format(self.target_vocab_value),
-            self.target_vocab_value]
+            self.target_vocab_value,
+            'concept_name_{}'.format(self.target_vocab_value)]
+
 
         self.rel_target_merge = rel_target_merge
 
