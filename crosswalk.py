@@ -43,13 +43,13 @@ class VocabTranslator(object):
     can then be outputted to a CSV. Requires vocabulary and concept
     relationship files downloaded from the OHDSI website.
 
-    Args & Attributes:
-    source_filepath (str): Path to source vocabulary.
-    source_code_col (str): Column in source vocabulary that will be mapped to the target vocabulary.
-    concept_filepath (str): Path to concept.csv.
-    source_vocab_value (str): Value of the source vocabulary.
-    target_vocab_value (str): Value of target vocabulary.
-    concept_relationship_filepath = Path to concept_relationship.csv.
+    Args:
+        source_filepath (str): Path to source vocabulary.
+        source_code_col (str): Column in source vocabulary that will be mapped to the target vocabulary.
+        concept_filepath (str): Path to concept.csv.
+        source_vocab_value (str): Value of the source vocabulary.
+        target_vocab_value (str): Value of target vocabulary.
+        concept_relationship_filepath = Path to concept_relationship.csv.
 
     """
 
@@ -65,7 +65,7 @@ class VocabTranslator(object):
         self.concept_relationship_filepath = concept_relationship_filepath 
 
         # Concept dictionary load.
-        concept = pd.read_csv(concept_filepath, sep="\\t", error_bad_lines=False,
+        concept = pd.read_csv(self.concept_filepath, sep="\\t", error_bad_lines=False,
                               converters={"concept_id": str,
                                           "concept_code": str},
                               engine='python')
@@ -74,7 +74,7 @@ class VocabTranslator(object):
 
         # Concept relationship dictionary load.
         concept_rel = pd.read_csv(
-            concept_relationship_filepath, sep="\\t",
+            self.concept_relationship_filepath, sep="\\t",
             error_bad_lines=False,
             converters={"concept_id_1": str,
                         "concept_id_2": str}, engine='python')
@@ -82,15 +82,15 @@ class VocabTranslator(object):
         # Select only the needed vocabularies.
 
         # Example with 'NDC' and 'RxNorm'
-        concept = concept[(concept["vocabulary_id"] == source_vocab_value)
-                          | (concept["vocabulary_id"] == target_vocab_value)]
+        concept = concept[(concept["vocabulary_id"] == self.source_vocab_value)
+                          | (concept["vocabulary_id"] == self.target_vocab_value)]
 
         # Select only the relationships on "mapping to".
         concept_rel = concept_rel[concept_rel['relationship_id'] == "Maps to"]
 
         # Load your source file.
-        source_voc = pd.read_csv(source_filepath,
-                                 converters={source_code_col: str})
+        source_voc = pd.read_csv(self.source_filepath,
+                                 converters={self.source_code_col: str})
         self.source_voc = source_voc
 
         # 1 Translate your source vocabulary code(concept_name) TO
@@ -98,7 +98,7 @@ class VocabTranslator(object):
         # replace left_on value for the source code columns name.
         concept_id_source = source_voc.merge(
             concept, how='left',
-            left_on=source_code_col, right_on="concept_code")
+            left_on=self.source_code_col, right_on="concept_code")
 
         # 2 step. Merge tables joining on concept_id(from source voc) to
         #  concept_id()
@@ -108,7 +108,7 @@ class VocabTranslator(object):
             right_on="concept_id_1")
 
         # Cleaning undesired columns
-        source_rel_merge = source_rel_merge[[source_code_col,
+        source_rel_merge = source_rel_merge[[self.source_code_col,
                                              'concept_id',
                                              'concept_id_1',
                                              'concept_id_2']]
@@ -123,7 +123,7 @@ class VocabTranslator(object):
             right_on="concept_id")
 
         rel_target_merge = rel_target_merge[[
-            source_code_col,
+            self.source_code_col,
             'concept_id_x',
             'concept_id_1',
             'concept_id_2',
@@ -131,11 +131,11 @@ class VocabTranslator(object):
         # Renaming columns for clarity
 
         rel_target_merge.columns = [
-            source_code_col,
+            self.source_code_col,
             'concept_id_x',
-            'concept_id_{}'.format(source_vocab_value),
-            'concept_id_{}'.format(target_vocab_value),
-            target_vocab_value]
+            'concept_id_{}'.format(self.source_vocab_value),
+            'concept_id_{}'.format(self.target_vocab_value),
+            self.target_vocab_value]
 
         self.rel_target_merge = rel_target_merge
 
