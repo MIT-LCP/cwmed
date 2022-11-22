@@ -69,8 +69,6 @@ class VocabTranslator(object):
                               converters={"concept_id": str,
                                           "concept_code": str},
                               engine='python')
-        # List of all vocabularies in the diccionary
-        self.vocab_list = concept["vocabulary_id"].unique()
 
         # Concept relationship dictionary load.
         concept_rel = pd.read_csv(
