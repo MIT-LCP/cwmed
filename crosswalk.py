@@ -64,24 +64,12 @@ class VocabTranslator(object):
         self.target_vocab_value = target_vocab_value
         self.concept_relationship_filepath = concept_relationship_filepath 
 
-        # Concept dictionary load.
-        concept = pd.read_csv(self.concept_filepath, sep="\\t", error_bad_lines=False,
-                              converters={"concept_id": str,
-                                          "concept_code": str},
-                              engine='python')
-
         # Concept relationship dictionary load.
         concept_rel = pd.read_csv(
             self.concept_relationship_filepath, sep="\\t",
             error_bad_lines=False,
             converters={"concept_id_1": str,
                         "concept_id_2": str}, engine='python')
-
-        # Select only the needed vocabularies.
-
-        # Example with 'NDC' and 'RxNorm'
-        concept = concept[(concept["vocabulary_id"] == self.source_vocab_value)
-                          | (concept["vocabulary_id"] == self.target_vocab_value)]
 
         # Select only the relationships on "mapping to".
         concept_rel = concept_rel[concept_rel['relationship_id'] == "Maps to"]
@@ -90,7 +78,7 @@ class VocabTranslator(object):
         # concept_id(NDC).
         # replace left_on value for the source code columns name.
         concept_id_source = self.__read_source_file().merge(
-            concept, how='left',
+            self.__read_concept_file, how='left',
             left_on=self.source_code_col, right_on="concept_code")
 
         # 2 step. Merge tables joining on concept_id(from source voc) to
@@ -111,7 +99,7 @@ class VocabTranslator(object):
         # obabstain the concept_code of the target voc.
 
         rel_target_merge = source_rel_merge.merge(
-            concept, how='left',
+            self.__read_concept_file(), how='left',
             left_on="concept_id_2",
             right_on="concept_id")
 
@@ -143,6 +131,23 @@ class VocabTranslator(object):
         source_df = pd.read_csv(self.source_filepath,
                                  converters={self.source_code_col: str})
         return source_df
+
+    def __read_concept_file(self):
+        """Loads omop concept dictionary that contains concept_id (omop id),
+           concept_code(common vocab code) and vocabulary_id (common vocab name)
+           with the specified source and target values.
+
+           Returns a pd.DataFrame with the concept_id, concept_code and vocabulary_id.
+        """
+        concept_df = pd.read_csv(self.concept_filepath, sep='\t',
+                                  converters={"concept_id": str,
+                                              "concept_code": str})
+
+        # Select only the needed vocabularies, e.g. 'NDC' and 'RxNorm'.
+        concept_df = concept_df[(concept_df["vocabulary_id"] == self.source_vocab_value) |
+                                 (concept_df["vocabulary_id"] == self.target_vocab_value)]
+
+        return concept_df
 
     def print_dic(self):
         """Prints the merged table.
