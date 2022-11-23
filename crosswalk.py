@@ -88,15 +88,10 @@ class VocabTranslator(object):
         # Select only the relationships on "mapping to".
         concept_rel = concept_rel[concept_rel['relationship_id'] == "Maps to"]
 
-        # Load your source file.
-        source_voc = pd.read_csv(self.source_filepath,
-                                 converters={self.source_code_col: str})
-        self.source_voc = source_voc
-
         # 1 Translate your source vocabulary code(concept_name) TO
         # concept_id(NDC).
         # replace left_on value for the source code columns name.
-        concept_id_source = source_voc.merge(
+        concept_id_source = self.__read_source_file().merge(
             concept, how='left',
             left_on=self.source_code_col, right_on="concept_code")
 
@@ -141,6 +136,15 @@ class VocabTranslator(object):
 
 
         self.rel_target_merge = rel_target_merge
+    
+    def __read_source_file(self):
+        """Reads the source file.
+        
+        Returns a pd.DataFrame that includes the source code.
+        """
+        source_df = pd.read_csv(self.source_filepath,
+                                 converters={self.source_code_col: str})
+        return source_df
 
     def print_dic(self):
         """Prints the merged table.
