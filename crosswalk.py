@@ -86,7 +86,7 @@ class VocabTranslator(object):
         # 2 step. Merge tables joining on concept_id(from source voc) to
         #  concept_id()
         source_rel_merge = concept_id_source.merge(
-            concept_rel, how='left',
+            self.__read_concept_relationship_file(), how='left',
             left_on="concept_id",
             right_on="concept_id_1")
 
@@ -133,6 +133,17 @@ class VocabTranslator(object):
         source_df = pd.read_csv(self.source_filepath,
                                  converters={self.source_code_col: str})
         return source_df
+    def __read_concept_relationship_file(self):
+        """ Loads a pairwise concept relationship dictionary that contains concept_id_1 and concept_id_2
+        
+        Returns a pd.DataFrame with the concept_id_1, concept_id_2 and relationship_id.
+        """
+        concept_relationship_df = pd.read_csv(self.concept_relationship_filepath, sep='\t',
+                                               converters={"concept_id_1": str,
+                                                           "concept_id_2": str})
+        concept_relationship_df = concept_relationship_df[concept_relationship_df['relationship_id'] == "Maps to"]
+
+        return concept_relationship_df   
 
     def __read_concept_file(self):
         """Loads omop concept dictionary that contains concept_id (omop id),
