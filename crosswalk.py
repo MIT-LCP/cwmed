@@ -77,8 +77,10 @@ class VocabTranslator(object):
         # 1 Translate your source vocabulary code(concept_name) TO
         # concept_id(NDC).
         # replace left_on value for the source code columns name.
+        concept_file = self.__read_concept_file()
+
         concept_id_source = self.__read_source_file().merge(
-            self.__read_concept_file, how='left',
+            concept_file, how='left',
             left_on=self.source_code_col, right_on="concept_code")
 
         # 2 step. Merge tables joining on concept_id(from source voc) to
@@ -99,7 +101,7 @@ class VocabTranslator(object):
         # obabstain the concept_code of the target voc.
 
         rel_target_merge = source_rel_merge.merge(
-            self.__read_concept_file(), how='left',
+            concept_file, how='left',
             left_on="concept_id_2",
             right_on="concept_id")
 
@@ -148,6 +150,7 @@ class VocabTranslator(object):
                                  (concept_df["vocabulary_id"] == self.target_vocab_value)]
 
         return concept_df
+
 
     def print_dic(self):
         """Prints the merged table.
