@@ -64,16 +64,6 @@ class VocabTranslator(object):
         self.target_vocab_value = target_vocab_value
         self.concept_relationship_filepath = concept_relationship_filepath 
 
-        # Concept relationship dictionary load.
-        concept_rel = pd.read_csv(
-            self.concept_relationship_filepath, sep="\\t",
-            error_bad_lines=False,
-            converters={"concept_id_1": str,
-                        "concept_id_2": str}, engine='python')
-
-        # Select only the relationships on "mapping to".
-        concept_rel = concept_rel[concept_rel['relationship_id'] == "Maps to"]
-
         # 1 Translate your source vocabulary code(concept_name) TO
         # concept_id(NDC).
         # replace left_on value for the source code columns name.
@@ -133,9 +123,9 @@ class VocabTranslator(object):
         source_df = pd.read_csv(self.source_filepath,
                                  converters={self.source_code_col: str})
         return source_df
+
     def __read_concept_relationship_file(self):
         """ Loads a pairwise concept relationship dictionary that contains concept_id_1 and concept_id_2
-        
         Returns a pd.DataFrame with the concept_id_1, concept_id_2 and relationship_id.
         """
         concept_relationship_df = pd.read_csv(self.concept_relationship_filepath, sep='\t',
@@ -143,7 +133,7 @@ class VocabTranslator(object):
                                                            "concept_id_2": str})
         concept_relationship_df = concept_relationship_df[concept_relationship_df['relationship_id'] == "Maps to"]
 
-        return concept_relationship_df   
+        return concept_relationship_df
 
     def __read_concept_file(self):
         """Loads omop concept dictionary that contains concept_id (omop id),
