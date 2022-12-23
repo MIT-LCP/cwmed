@@ -35,3 +35,20 @@ def test_save_dic_function():
     expected_target_df = pd.read_csv('tests/data/source_icd10_to_snomed_example_expected_result.csv')
     expected_target_df_filtered = expected_target_df.loc[icd10_to_snomed_target_df['icd10'] == 'A04.4']
     assert_frame_equal(expected_target_df_filtered,icd10_to_snomed_target_df_filtered, check_dtype= False)
+
+def tests_failed_mappings_function():
+    """
+    Tests that the dataframe containing source code e.g. icd10 of 'C78.7' from the source file 
+    has failed to map to a snomed code as part of the failed mappings csv.
+    """
+    vocab = cw.VocabTranslator(source_filepath = 'tests/data/source_icd10.csv',
+                               source_code_col = 'icd10',
+                               concept_filepath = 'tests/data/concept_example_icd10_snomed.csv',
+                               source_vocab_value = 'ICD10CM',target_vocab_value = 'SNOMED',
+                               concept_relationship_filepath = 'tests/data/concept_relationship_example_icd10_snomed.csv')
+    vocab.failed_mappings('tests/data/source_icd10_to_snomed_failed_mappings_example.csv')
+    icd10_to_snomed_target_df_failed_mappings = pd.read_csv('tests/data/source_icd10_to_snomed_failed_mappings_example.csv')
+    icd10_to_snomed_target_df_failed_mappings_filtered = icd10_to_snomed_target_df_failed_mappings.loc[icd10_to_snomed_target_df_failed_mappings['icd10'] == 'C78.7']   
+    expected_target_df = pd.read_csv('tests/data/source_icd10_to_snomed_failed_mappings_example_expected_result.csv') 
+    expected_target_df_filtered = expected_target_df.loc[expected_target_df['icd10'] == 'C78.7']   
+    assert_frame_equal(expected_target_df_filtered,icd10_to_snomed_target_df_failed_mappings_filtered, check_dtype= False)
