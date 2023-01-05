@@ -67,7 +67,8 @@ class VocabTranslator(object):
         self.target_table = self._map_concept_id_2_to_concept_code()
 
     def _read_source_file(self):
-        """Reads the source file.
+        """
+        Reads the source file.
         
         Returns a pd.DataFrame that includes the source code.
         """
@@ -76,7 +77,8 @@ class VocabTranslator(object):
         return df
 
     def _read_concept_relationship_file(self):
-        """ Loads a pairwise concept relationship dictionary that contains concept_id_1 and concept_id_2
+        """ 
+        Loads a pairwise concept relationship dictionary that contains concept_id_1 and concept_id_2.
         Returns a pd.DataFrame with the concept_id_1, concept_id_2 and relationship_id.
         """
         df = pd.read_csv(self.concept_relationship_filepath, sep='\t',
@@ -87,11 +89,12 @@ class VocabTranslator(object):
         return df
 
     def _read_concept_file(self):
-        """Loads omop concept dictionary that contains concept_id (omop id),
-           concept_code(common vocab code) and vocabulary_id (common vocab name)
-           with the specified source and target values.
+        """
+        Loads omop concept dictionary that contains concept_id (omop id),
+        concept_code(common vocab code) and vocabulary_id (common vocab name)
+        with the specified source and target values.
 
-           Returns a pd.DataFrame with the concept_id, concept_code and vocabulary_id.
+        Returns a pd.DataFrame with the concept_id, concept_code and vocabulary_id.
         """
         df = pd.read_csv(self.concept_filepath, sep='\t',
                                  converters={"concept_id": str,
@@ -156,7 +159,8 @@ class VocabTranslator(object):
         return df
 
     def print_dic(self):
-        """Prints the merged table.
+        """
+        Prints the merged table.
 
         Prints a pd.DataFrame that maps concepts between the source and target
         vocabularies.
@@ -164,7 +168,8 @@ class VocabTranslator(object):
         print(self.target_table)
 
     def save_dic(self, filepath):
-        """Saves the merged table to CSV.
+        """
+        Saves the merged table to CSV.
 
         Saves a pd.DataFrame that maps concepts between the source and target
         vocabularies.
@@ -172,7 +177,8 @@ class VocabTranslator(object):
         self.target_table.to_csv(filepath, index = False)
 
     def failed_mappings(self, filepath):
-        """Prints a table of failed mappings.
+        """
+        Prints a table of failed mappings.
 
         Prints a pd.DataFrame that lists concepts that could not be matched
         between the source and target vocabularies.
