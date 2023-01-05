@@ -36,7 +36,7 @@ def test_save_dic_function():
     expected_target_df_filtered = expected_target_df.loc[icd10_to_snomed_target_df['icd10'] == 'A04.4']
     assert_frame_equal(expected_target_df_filtered,icd10_to_snomed_target_df_filtered, check_dtype= False)
 
-def tests_failed_mappings_function():
+def test_failed_mappings_function():
     """
     Tests that the dataframe containing source code e.g. icd10 of 'C78.7' from the source file 
     has failed to map to a snomed code as part of the failed mappings csv.
