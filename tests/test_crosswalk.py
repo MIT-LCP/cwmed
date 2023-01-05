@@ -1,6 +1,8 @@
+import numpy as np
 import pandas as pd
-import crosswalk as cw
 from pandas.testing import assert_frame_equal
+
+import crosswalk as cw
 
 def test_crosswalk_between_icd10_snomed():
     """
@@ -52,3 +54,8 @@ def tests_failed_mappings_function():
     expected_target_df = pd.read_csv('tests/data/source_icd10_to_snomed_failed_mappings_example_expected_result.csv') 
     expected_target_df_filtered = expected_target_df.loc[expected_target_df['icd10'] == 'C78.7']   
     assert_frame_equal(expected_target_df_filtered,icd10_to_snomed_target_df_failed_mappings_filtered, check_dtype= False)
+
+def test_check_concept_file_source_target_values():
+    expected_output = np.array(['ICD10CM', 'SNOMED'])
+    output = cw.check_concept_file_source_target_values('tests/data/concept_example_icd10_snomed.csv')
+    assert np.array_equal(expected_output, output)
