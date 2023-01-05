@@ -1,3 +1,4 @@
 concept_id	concept_name	domain_id	vocabulary_id	concept_class_id	standard_concept	concept_code	valid_start_date	valid_end_date	invalid_reason
 35205417	Other intestinal Escherichia coli infections	Condition	ICD10CM	4-char billing code		A04.4	20070101	20991231	
 192815	Intestinal infection due to E. coli	Condition	SNOMED	Clinical Finding	S	111839008	20020131	20991231	
+35206332	Secondary malignant neoplasm of liver and intrahepatic bile duct	Measurement	ICD10CM	4-char billing code		C78.7	20070101	20991231	
