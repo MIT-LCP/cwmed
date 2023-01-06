@@ -12,7 +12,7 @@ import zipfile
 import io
 
 
-def download_data(url,filepath):
+def download_data(url, filepath):
     """
     Downloads and unzips two required files
     (1) concept.csv and (2) concept_relationship.csv
