@@ -12,17 +12,19 @@ import zipfile
 import io
 
 
-def download_data():
-    '''
+def download_data(url, filepath):
+    """
     Downloads and unzips two required files
     (1) concept.csv and (2) concept_relationship.csv
     using the url link emailed to registered users on the athena website.
-    '''
-    url = input('url:')
-    response = requests.get(url)
+    
+    Args:
+        url (str): Url link to download zipfile.
+        filepath (str): Output directory to save CONCEPT.csv and CONCEPT_RELATIONSHIP.csv files.
+    """
+    response = requests.get(url) 
     z = zipfile.ZipFile(io.BytesIO(response.content))
-    data_directory = os.getcwd()+'/data'
-    z.extractall(data_directory, members=[i for i in z.namelist()
+    z.extractall(filepath, members=[i for i in z.namelist()
                  if i in ('CONCEPT.csv', 'CONCEPT_RELATIONSHIP.csv')])
 
 def check_concept_file_source_target_values(concept_filepath):
