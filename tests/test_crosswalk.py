@@ -36,7 +36,7 @@ def test_save_dic_function():
     with tempfile.TemporaryDirectory() as tmp_dir:
         tmp_file = os.path.join(tmp_dir,'output.csv')
         vocab.save_dic(tmp_file)
-        result = pd.read_csv(tmp_file) # actual target table
+        result = pd.read_csv(tmp_file)
         result = result.loc[result['icd10'] == 'A04.4']
         expected = pd.read_csv('tests/data/source_icd10_to_snomed_example_expected_result.csv')
         expected = expected.loc[expected['icd10'] == 'A04.4']
@@ -46,7 +46,7 @@ def test_failed_mappings_function():
     """
     Tests that the dataframe containing source code e.g. icd10 of 'C78.7' from the source file 
     has failed to map to a snomed code as part of the failed mappings csv.
-    """
+    """ 
     vocab = cw.VocabTranslator(source_filepath = 'tests/data/source_icd10.csv',
                                source_code_col = 'icd10',
                                concept_filepath = 'tests/data/concept_example_icd10_snomed.csv',
