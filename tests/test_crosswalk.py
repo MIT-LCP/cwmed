@@ -52,12 +52,14 @@ def test_failed_mappings_function():
                                concept_filepath = 'tests/data/concept_example_icd10_snomed.csv',
                                source_vocab_value = 'ICD10CM',target_vocab_value = 'SNOMED',
                                concept_relationship_filepath = 'tests/data/concept_relationship_example_icd10_snomed.csv')
-    vocab.failed_mappings('tests/data/source_icd10_to_snomed_failed_mappings_example.csv')
-    icd10_to_snomed_target_df_failed_mappings = pd.read_csv('tests/data/source_icd10_to_snomed_failed_mappings_example.csv')
-    icd10_to_snomed_target_df_failed_mappings_filtered = icd10_to_snomed_target_df_failed_mappings.loc[icd10_to_snomed_target_df_failed_mappings['icd10'] == 'C78.7']   
-    expected_target_df = pd.read_csv('tests/data/source_icd10_to_snomed_failed_mappings_example_expected_result.csv') 
-    expected_target_df_filtered = expected_target_df.loc[expected_target_df['icd10'] == 'C78.7']   
-    assert_frame_equal(expected_target_df_filtered,icd10_to_snomed_target_df_failed_mappings_filtered, check_dtype= False)
+    with tempfile.TemporaryDirectory() as tmp_dir:
+        tmp_file = os.path.join(tmp_dir,'output.csv')
+        vocab.failed_mappings(tmp_file)
+        result = pd.read_csv(tmp_file) # actual target table
+        result = result.loc[result['icd10'] == 'C78.7']
+        expected = pd.read_csv('tests/data/source_icd10_to_snomed_failed_mappings_example_expected_result.csv')
+        expected = expected.loc[expected['icd10'] == 'C78.7']
+        assert_frame_equal(result, expected)
 
 def test_check_concept_file_source_target_values():
     expected_output = np.array(['ICD10CM', 'SNOMED'])
