@@ -16,10 +16,13 @@ def test_crosswalk_between_icd10_snomed():
                                source_vocab_value = 'ICD10CM',
                                target_vocab_value = 'SNOMED',
                                concept_relationship_filepath = 'tests/data/concept_relationship_example_icd10_snomed.csv')
+    target_df = vocab.target_table
     target_column = vocab.target_vocab_value
-    snomed_target_code = vocab.target_table[target_column].iloc[0]
-    expected_target_code = '111839008'  
-    assert expected_target_code == snomed_target_code
+    source_column = vocab.source_code_col
+    target_row = target_df.loc[target_df[source_column] == 'A04.4']
+    snomed_target_code = target_row[target_column].values
+    expected_target_code = ['111839008']
+    assert (expected_target_code == snomed_target_code)
 
 def test_save_dic_function():
     """ 
