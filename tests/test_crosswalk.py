@@ -55,7 +55,17 @@ def test_failed_mappings_function():
     expected_target_df_filtered = expected_target_df.loc[expected_target_df['icd10'] == 'C78.7']   
     assert_frame_equal(expected_target_df_filtered,icd10_to_snomed_target_df_failed_mappings_filtered, check_dtype= False)
 
-def test_check_concept_file_source_target_values():
+
+def test_check_concept_file_source_target_values_returns_expected_output_as_np_ndarray():
+    """
+    Test the check_concept_file_source_target_values function from the
+    cw module. It asserts that the output of the function is of the same
+    type and has the same elements as the expected output, which is an array
+    containing the strings 'ICD10CM' and 'SNOMED'. The function is passed the
+    file path 'tests/data/concept_example_icd10_snomed.csv' as an argument.
+    """
     expected_output = np.array(['ICD10CM', 'SNOMED'])
-    output = cw.check_concept_file_source_target_values('tests/data/concept_example_icd10_snomed.csv')
-    assert np.array_equal(expected_output, output)
+    filepath = 'tests/data/concept_example_icd10_snomed.csv'
+    output = cw.check_concept_file_source_target_values(filepath)
+    assert (type(expected_output) == type(output) and
+            np.array_equal(expected_output, output))
