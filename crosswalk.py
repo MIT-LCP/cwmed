@@ -39,7 +39,7 @@ def get_unique_vocab(file_path):
     Examples:
     
     >>> import cw
-    >>> unique_vocabs = cw.get_unique_vocab('tests/data/source_icd10.csv')
+    >>> unique_vocabs = cw.get_unique_vocab('tests/data/input/icd10.csv')
     >>> print(unique_vocabs)
     ['ICD10CM', 'SNOMED']
 
@@ -71,11 +71,11 @@ class VocabTranslator:
         concept_relationship_filepath = Path to CONCEPT_RELATIONSHIP.csv.
 
     Examples:
-    >>> vocab = cw.VocabTranslator(source_filepath = 'tests/data/source_icd10.csv',
+    >>> vocab = cw.VocabTranslator(source_filepath = 'tests/data/input/icd10.csv',
                                    source_code_col = 'icd10',
-                                   concept_filepath = 'tests/data/concept_example_icd10_snomed.csv',
+                                   concept_filepath = 'tests/data/input/icd10_to_snomed_concept.csv',
                                    source_vocab_value = 'ICD10CM',target_vocab_value = 'SNOMED',
-                                   concept_relationship_filepath = 'tests/data/concept_relationship_example_icd10_snomed.csv')
+                                   concept_relationship_filepath = 'tests/data/input/icd10_to_snomed_concept_relationship.csv')
     """
 
     def __init__(self, source_filepath: str, source_code_col: str,
@@ -99,11 +99,11 @@ class VocabTranslator:
 
         Examples:
         >>> # Read the source to vocab crosswalk as a Vocab Translator object.
-        >>> vocab = cw.VocabTranslator(source_filepath = 'tests/data/source_icd10.csv',
+        >>> vocab = cw.VocabTranslator(source_filepath = 'tests/data/input/icd10.csv',
                                        source_code_col = 'icd10',
-                                       concept_filepath = 'tests/data/concept_example_icd10_snomed.csv',
+                                       concept_filepath = 'tests/data/input/icd10_to_snomed_concept.csv',
                                        source_vocab_value = 'ICD10CM',target_vocab_value = 'SNOMED',
-                                       concept_relationship_filepath = 'tests/data/concept_relationship_example_icd10_snomed.csv')
+                                       concept_relationship_filepath = 'tests/data/input/icd10_to_snomed_concept_relationship.csv')
         >>> # Observe the source vocab, e.g. icd10 code 'A04.4' in the source file.
         >>> source_df = vocab._read_source_file()
         >>> source_df[source_df["icd10"] == "A04.4"]
@@ -128,11 +128,11 @@ class VocabTranslator:
                  and standard_concept that defines whether a vocabulary_id code is standard vocab.
 
         >>> # Read the source to vocab crosswalk as a Vocab Translator object.
-        >>> vocab = cw.VocabTranslator(source_filepath = 'tests/data/source_icd10.csv',
+        >>> vocab = cw.VocabTranslator(source_filepath = 'tests/data/input/icd10.csv',
                                        source_code_col = 'icd10',
-                                       concept_filepath = 'tests/data/concept_example_icd10_snomed.csv',
+                                       concept_filepath = 'tests/data/input/icd10_to_snomed_concept.csv',
                                        source_vocab_value = 'ICD10CM',target_vocab_value = 'SNOMED',
-                                       concept_relationship_filepath = 'tests/data/concept_relationship_example_icd10_snomed.csv')
+                                       concept_relationship_filepath = 'tests/data/input/icd10_to_snomed_concept_relationship.csv')
         >>> # Observe the rows with icd 10 source code of A04.4 and snomed standard target code of 111839008 in the CONCEPT.csv.
         >>> concept_df = vocab._read_concept_file()
         >>> concept_df = concept_df[(concept_df['concept_code'] == 'A04.4') | (concept_df['concept_code'] == '111839008')]
@@ -163,11 +163,11 @@ class VocabTranslator:
 
         Examples:
         >>> # Read the source to vocab crosswalk as a Vocab Translator object.
-        >>> vocab = cw.VocabTranslator(source_filepath = 'tests/data/source_icd10.csv',
+        >>> vocab = cw.VocabTranslator(source_filepath = 'tests/data/input/icd10.csv',
                                        source_code_col = 'icd10',
-                                       concept_filepath = 'tests/data/concept_example_icd10_snomed.csv',
+                                       concept_filepath = 'tests/data/input/icd10_to_snomed_concept.csv',
                                        source_vocab_value = 'ICD10CM',target_vocab_value = 'SNOMED',
-                                       concept_relationship_filepath = 'tests/data/concept_relationship_example_icd10_snomed.csv')
+                                       concept_relationship_filepath = 'tests/data/input/icd10_to_snomed_concept_relationship.csv')
         >>> concept_rel_df = vocab._read_concept_relationship_file()
         >>> concept_rel_df = concept_rel_df[concept_rel_df['concept_id_1'] == '35205417']
         >>> concept_rel_df = concept_rel_df[['concept_id_1','concept_id_2', 'relationship_id']]
@@ -190,11 +190,11 @@ class VocabTranslator:
 
         Examples:
         >>> # Read the source to vocab crosswalk as a Vocab Translator object.
-        >>> vocab = cw.VocabTranslator(source_filepath = 'tests/data/source_icd10.csv',
+        >>> vocab = cw.VocabTranslator(source_filepath = 'tests/data/input/icd10.csv',
                                        source_code_col = 'icd10',
-                                       concept_filepath = 'tests/data/concept_example_icd10_snomed.csv',
+                                       concept_filepath = 'tests/data/input/icd10_to_snomed_concept.csv',
                                        source_vocab_value = 'ICD10CM',target_vocab_value = 'SNOMED',
-                                       concept_relationship_filepath = 'tests/data/concept_relationship_example_icd10_snomed.csv')
+                                       concept_relationship_filepath = 'tests/data/input/icd10_to_snomed_concept_relationship.csv')
         >>> source_to_concept_id_df = vocab._map_source_to_source_concept_id()
         >>> source_to_concept_id_df = source_to_concept_id_df[source_to_concept_id_df['icd10'] == 'A04.4']
         >>> source_to_concept_id_df
@@ -217,11 +217,11 @@ class VocabTranslator:
 
         Examples:
         >>> # Read the source to vocab crosswalk as a Vocab Translator object.
-        >>> vocab = cw.VocabTranslator(source_filepath = 'tests/data/source_icd10.csv',
+        >>> vocab = cw.VocabTranslator(source_filepath = 'tests/data/input/icd10.csv',
                                        source_code_col = 'icd10',
-                                       concept_filepath = 'tests/data/concept_example_icd10_snomed.csv',
+                                       concept_filepath = 'tests/data/input/icd10_to_snomed_concept.csv',
                                        source_vocab_value = 'ICD10CM',target_vocab_value = 'SNOMED',
-                                       concept_relationship_filepath = 'tests/data/concept_relationship_example_icd10_snomed.csv')
+                                       concept_relationship_filepath = 'tests/data/input/icd10_to_snomed_concept_relationship.csv')
         >>> source_concept_id_to_target_concept_id_df = vocab._map_source_concept_id_to_target_concept_id()
         >>> source_concept_id_to_target_concept_id_df = source_concept_id_to_target_concept_id_df[source_concept_id_to_target_concept_id_df['icd10'] == 'A04.4']
         >>> source_concept_id_to_target_concept_id_df
@@ -250,11 +250,11 @@ class VocabTranslator:
 
         Examples:
         >>> # Read the source to vocab crosswalk as a Vocab Translator object.
-        >>> vocab = cw.VocabTranslator(source_filepath = 'tests/data/source_icd10.csv',
+        >>> vocab = cw.VocabTranslator(source_filepath = 'tests/data/input/icd10.csv',
                                        source_code_col = 'icd10',
-                                       concept_filepath = 'tests/data/concept_example_icd10_snomed.csv',
+                                       concept_filepath = 'tests/data/input/icd10_to_snomed_concept.csv',
                                        source_vocab_value = 'ICD10CM',target_vocab_value = 'SNOMED',
-                                       concept_relationship_filepath = 'tests/data/concept_relationship_example_icd10_snomed.csv')
+                                       concept_relationship_filepath = 'tests/data/input/icd10_to_snomed_concept_relationship.csv')
         >>> source_to_target_df = vocab._map_source_to_target()
         >>> source_to_target_df = source_to_target_df[source_to_target_df['ICD10CM'] == 'A04.4']
         >>> source_to_target_df
