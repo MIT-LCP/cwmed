@@ -40,9 +40,10 @@ def test_save_source_to_target_function():
         tmp_file = os.path.join(tmp_dir,'output.csv')
         vocab.save_source_to_target(tmp_file)
         result = pd.read_csv(tmp_file)
-        result = result.loc[result['icd10'] == 'A04.4']
-        expected = pd.read_csv('tests/data/source_icd10_to_snomed_example_expected_result.csv')
-        expected = expected.loc[expected['icd10'] == 'A04.4']
+        source_column = vocab.source_vocab_value
+        result = result.loc[result[source_column] == 'A04.4']
+        expected = pd.read_csv('tests/data/expected/icd10_to_snomed.csv')
+        expected = expected.loc[expected[source_column] == 'A04.4']
         assert_frame_equal(result, expected)
 
 def test_save_source_to_target_failed_mappings_function():
@@ -54,14 +55,15 @@ def test_save_source_to_target_failed_mappings_function():
                                source_code_col = 'icd10',
                                concept_filepath = 'tests/data/input/icd10_to_snomed_concept.csv',
                                source_vocab_value = 'ICD10CM',target_vocab_value = 'SNOMED',
-                               concept_relationship_filepath = 'tests/data/icd10_to_snomed_concept_relationship.csv')
+                               concept_relationship_filepath = 'tests/data/input/icd10_to_snomed_concept_relationship.csv')
     with tempfile.TemporaryDirectory() as tmp_dir:
         tmp_file = os.path.join(tmp_dir,'output.csv')
         vocab.save_source_to_target_failed_mappings(tmp_file)
-        result = pd.read_csv(tmp_file) # actual target table
-        result = result.loc[result['icd10'] == 'C78.7']
-        expected = pd.read_csv('tests/data/source_icd10_to_snomed_failed_mappings_example_expected_result.csv')
-        expected = expected.loc[expected['icd10'] == 'C78.7']
+        result = pd.read_csv(tmp_file)
+        source_column = vocab.source_vocab_value
+        result = result.loc[result[source_column] == 'C78.7']
+        expected = pd.read_csv('tests/data/expected/icd10_to_snomed_failed_mappings.csv')
+        expected = expected.loc[expected[source_column] == 'C78.7']
         assert_frame_equal(result, expected)
 
 
