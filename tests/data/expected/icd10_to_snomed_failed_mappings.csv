@@ -1,5 +1,4 @@
-icd10,concept_id_x,concept_id_SNOMED,concept_id_ICD10CM,SNOMED,concept_name
-A04.4,35205417,35205417,192815,111839008,Intestinal infection due to E. coli
+ICD10CM,ICD10CM_label,ICD10CM_omop_id,SNOMED,SNOMED_label,SNOMED_omop_id
 A04.7,,,,,
 A04.72,,,,,
 A07.1,,,,,
@@ -32,7 +31,7 @@ C44.311,,,,,
 C44.319,,,,,
 C78.00,,,,,
 C78.02,,,,,
-C78.7,35206332,,,,
+C78.7,Secondary malignant neoplasm of liver and intrahepatic bile duct,,,,
 C79.51,,,,,
 C79.70,,,,,
 C79.89,,,,,
