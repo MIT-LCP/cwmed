@@ -1,10 +1,10 @@
 [project]
-name = "crosswalk_medical"
-version = "0.0.1"
+name = "cwmed"
+version = "0.1.0"
+description = "Crosswalk Medical: crosswalk between source and target medical terminologies."
 authors = [
-  { name="xavier borrat", email="xborrat@mit.edu" },
+  { name="The Laboratory for Computational Physiology", email="<contact@physionet.org>" },
 ]
-description = "walk between medical terminologies"
 readme = "README.md"
 license = { file="LICENSE" }
 requires-python = ">=3.7"
