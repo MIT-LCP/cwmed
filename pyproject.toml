@@ -3,7 +3,7 @@ name = "cwmed"
 version = "0.1.0"
 description = "Crosswalk Medical: crosswalk between source and target medical terminologies."
 authors = [
-  { name="The Laboratory for Computational Physiology", email="<contact@physionet.org>" },
+  { name="The Laboratory for Computational Physiology", email="contact@physionet.org" },
 ]
 readme = "README.md"
 license = { file="LICENSE" }
