@@ -20,11 +20,15 @@ def download_data(url, path):
     >>> path = "/path/to/output/directory/"
     >>> cw.download_data(url,path)
     """
+    
+    print("Starting download...")
 
     response = requests.get(url) 
     z = zipfile.ZipFile(io.BytesIO(response.content))
     z.extractall(path, members=[i for i in z.namelist()
                  if i in ('CONCEPT.csv', 'CONCEPT_RELATIONSHIP.csv')])
+    
+    print("Download complete!")
 
 def get_unique_vocab(file_path):
     """
@@ -39,7 +43,7 @@ def get_unique_vocab(file_path):
     Examples:
     
     >>> import cw
-    >>> unique_vocabs = cw.get_unique_vocab('tests/data/input/icd10.csv')
+    >>> unique_vocabs = cw.get_unique_vocab('tests/data/input/icd10_to_snomed_concept.csv')
     >>> print(unique_vocabs)
     ['ICD10CM', 'SNOMED']
 

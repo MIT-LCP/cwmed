@@ -4,7 +4,7 @@ import pandas as pd
 from pandas.testing import assert_frame_equal
 import tempfile
 
-import crosswalk as cw
+import cwmed as cw
 
 def test_crosswalk_between_icd10_snomed():
     """

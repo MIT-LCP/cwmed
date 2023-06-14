@@ -1,0 +1,479 @@
+ICD10CM,ICD10CM_label,ICD10CM_omop_id,SNOMED,SNOMED_label,SNOMED_omop_id
+A04.4,Other intestinal Escherichia coli infections,35205417,111839008,Intestinal infection due to E. coli,192815
+A04.7,Enterocolitis due to Clostridium difficile,35205420,186431008,Clostridioides difficile infection,193688
+A04.72,"Enterocolitis due to Clostridium difficile, not specified as recurrent",1326483,423590009,Clostridium difficile colitis,4307981
+A07.1,Giardiasis [lambliasis],35205440,58265007,Giardiasis,437202
+A08.11,Acute gastroenteropathy due to Norwalk agent,45581101,24789006,Viral gastroenteritis due to Norwalk-like agent,196895
+A31.8,Other mycobacterial infections,35205524,88415009,Mycobacteriosis,440631
+A41.51,Sepsis due to Escherichia coli [E. coli],45552179,447899008,Sepsis due to Escherichia coli,40487064
+A41.81,Sepsis due to Enterococcus,45552180,1092591000119105,Sepsis caused by Enterococcus,46269946
+A41.89,Other specified sepsis,45537723,91302008,Sepsis,132797
+A41.9,"Sepsis, unspecified organism",35205553,91302008,Sepsis,132797
+A87.2,Lymphocytic choriomeningitis,35205691,398136003,Lymphocytic choriomeningitis,434860
+B02.9,Zoster without complications,35205741,111859007,Herpes zoster without complication,440329
+B18.2,Chronic viral hepatitis C,35205771,128302006,Chronic hepatitis C,198964
+B20,Human immunodeficiency virus [HIV] disease,35205776,86406008,Human immunodeficiency virus infection,439727
+B37.1,Pulmonary candidiasis,35205821,3487004,Candidiasis of lung,260041
+B44.1,Other pulmonary aspergillosis,35205862,6042001,Pulmonary aspergillosis,4245409
+B57.2,Chagas' disease (chronic) with heart involvement,35205913,722890004,Chronic Chagas disease with heart involvement,36716727
+B95.2,Enterococcus as the cause of diseases classified elsewhere,35206026,406574007,Infection due to enterococcus,443535
+B95.7,Other staphylococcus as the cause of diseases classified elsewhere,35206031,56038003,Staphylococcal infectious disease,435459
+B96.1,Klebsiella pneumoniae [K. pneumoniae] as the cause of diseases classified elsewhere,35206034,186435004,Bacterial infection due to Klebsiella pneumoniae,436339
+B96.20,Unspecified Escherichia coli [E. coli] as the cause of diseases classified elsewhere,45571486,71057007,Infection due to Escherichia coli,440320
+B96.5,Pseudomonas (aeruginosa) (mallei) (pseudomallei) as the cause of diseases classified elsewhere,35206038,63398001,Bacterial infection due to Pseudomonas,438064
+B96.89,Other specified bacterial agents as the cause of diseases classified elsewhere,45585977,87628006,Bacterial infectious disease,432545
+C16.0,Malignant neoplasm of cardia,35206115,93738008,Primary malignant neoplasm of cardia of stomach,432838
+C18.1,Malignant neoplasm of appendix,35206131,93679002,Primary malignant neoplasm of appendix,433143
+C18.2,Malignant neoplasm of ascending colon,35206132,93683002,Primary malignant neoplasm of ascending colon,4247719
+C18.8,Malignant neoplasm of overlapping sites of colon,35206138,109838007,Overlapping malignant neoplasm of colon,79740
+C34.31,"Malignant neoplasm of lower lobe, right bronchus or lung",45581205,372110008,"Primary malignant neoplasm of lower lobe, bronchus or lung",4157454
+C34.90,Malignant neoplasm of unspecified part of unspecified bronchus or lung,45590885,93986008,Primary malignant neoplasm of respiratory tract,4311499
+C44.311,Basal cell carcinoma of skin of nose,45561801,402818009,Basal cell carcinoma of nose,4291454
+C44.319,Basal cell carcinoma of skin of other parts of face,45590897,402519009,Basal cell carcinoma of face,4299417
+C78.00,Secondary malignant neoplasm of unspecified lung,45586027,94391008,Secondary malignant neoplasm of lung,254591
+C78.02,Secondary malignant neoplasm of left lung,45552281,353741000119106,Secondary malignant neoplasm of left lung,46273652
+C78.7,Secondary malignant neoplasm of liver and intrahepatic bile duct,,,,
+C79.51,Secondary malignant neoplasm of bone,45552285,94222008,Secondary malignant neoplasm of bone,78097
+C79.70,Secondary malignant neoplasm of unspecified adrenal gland,45576342,94161006,Secondary malignant neoplasm of adrenal gland,193144
+C79.89,Secondary malignant neoplasm of other specified sites,45532939,128462008,Secondary malignant neoplastic disease,432851
+C82.90,"Follicular lymphoma, unspecified, unspecified site",45552300,308121000,Follicular non-Hodgkin's lymphoma,4147411
+C83.00,"Small cell B-cell lymphoma, unspecified site",45600547,109968002,"Diffuse non-Hodgkin's lymphoma, small cell (clinical)",4002356
+C83.39,"Diffuse large B-cell lymphoma, extranodal and solid organ sites",45557027,93199007,Malignant lymphoma of extranodal AND/OR solid organ site,440058
+C83.39,"Diffuse large B-cell lymphoma, extranodal and solid organ sites",45557027,404148006,Diffuse large B-cell lymphoma (nodal/systemic with skin involvement),4300704
+C88.4,Extranodal marginal zone B-cell lymphoma of mucosa-associated lymphoid tissue [MALT-lymphoma],920123,445269007,Extranodal marginal zone B-cell lymphoma of mucosa-associated lymphoid tissue (MALT-lymphoma),40482893
+C90.10,Plasma cell leukemia not having achieved remission,45557038,95210003,Plasma cell leukemia,133154
+C92.02,"Acute myeloblastic leukemia, in relapse",45532959,91861009,"Acute myeloid leukemia, disease",140352
+D18.03,Hemangioma of intra-abdominal structures,45605347,189197001,Hemangioma of intra-abdominal structure,197239
+D22.39,Melanocytic nevi of other parts of face,45576380,109269004,Melanocytic nevus of face,4031106
+D46.9,"Myelodysplastic syndrome, unspecified",35206675,109995007,Myelodysplastic syndrome (clinical),138994
+D47.2,Monoclonal gammopathy,35206678,109983007,Monoclonal gammopathy (clinical),4002359
+D47.Z1,Post-transplant lymphoproliferative disorder (PTLD),45542704,254290004,Lymphoproliferative disorder following transplantation,435514
+D50.0,Iron deficiency anemia secondary to blood loss (chronic),35206692,724556004,Iron deficiency anemia due to blood loss,37119138
+D50.8,Other iron deficiency anemias,35206694,87522002,Iron deficiency anemia,436659
+D50.9,"Iron deficiency anemia, unspecified",35206695,87522002,Iron deficiency anemia,436659
+D52.0,Dietary folate deficiency anemia,35206702,267518003,Folate deficiency anemia due to dietary causes,4143351
+D53.8,Other specified nutritional anemias,35206709,66612000,Nutritional anemia,4280354
+D59.1,Other autoimmune hemolytic anemias,35206732,413603009,Autoimmune hemolytic anemia,441269
+D59.9,"Acquired hemolytic anemia, unspecified",35206739,4854004,Acquired hemolytic anemia,440979
+D63.1,Anemia in chronic kidney disease,45557089,707323002,Anemia in chronic kidney disease,45768812
+D63.8,Anemia in other chronic diseases classified elsewhere,35206750,234347009,Anemia of chronic disease,437247
+D64.9,"Anemia, unspecified",35206757,271737000,Anemia,439777
+D68.51,Activated protein C resistance,45537927,421527008,Resistance to activated protein C due to Factor V Leiden,4225324
+D69.49,Other primary thrombocytopenia,45542714,267534000,Primary thrombocytopenia,441264
+D69.6,"Thrombocytopenia, unspecified",35206772,302215000,Thrombocytopenic disorder,432870
+D70.1,Agranulocytosis secondary to cancer chemotherapy,45537931,767658000,Neutropenia due to and following chemotherapy,35624757
+D70.3,Neutropenia due to infection,45552363,46359005,Neutropenia associated with infectious disease,432589
+D72.820,Lymphocytosis (symptomatic),45605380,67023009,Lymphocytosis,4281826
+D89.811,Chronic graft-versus-host disease,45561938,402356004,Chronic graft-versus-host disease,434314
+E03.8,Other specified hypothyroidism,35206858,111566002,Acquired hypothyroidism,138384
+E03.9,"Hypothyroidism, unspecified",35206859,40930008,Hypothyroidism,140673
+E04.2,Nontoxic multinodular goiter,35206862,36241006,Non-toxic multinodular goiter,136368
+E05.90,"Thyrotoxicosis, unspecified without thyrotoxic crisis or storm",45581340,90739004,Thyrotoxicosis,138387
+E09.9,Drug or chemical induced diabetes mellitus without complications,45533015,5368009,Drug-induced diabetes mellitus,4202383
+E10.21,Type 1 diabetes mellitus with diabetic nephropathy,45552379,421893009,Renal disorder due to type 1 diabetes mellitus,200687
+E10.22,Type 1 diabetes mellitus with diabetic chronic kidney disease,45547621,421893009,Renal disorder due to type 1 diabetes mellitus,200687
+E10.319,Type 1 diabetes mellitus with unspecified diabetic retinopathy without macular edema,45542736,420789003,Retinopathy due to type 1 diabetes mellitus,4227210
+E10.3559,"Type 1 diabetes mellitus with stable proliferative diabetic retinopathy, unspecified eye",37200188,60971000119101,Proliferative retinopathy due to type 1 diabetes mellitus,45763584
+E10.40,"Type 1 diabetes mellitus with diabetic neuropathy, unspecified",45600638,421468001,Disorder of nervous system due to type 1 diabetes mellitus,377821
+E10.43,Type 1 diabetes mellitus with diabetic autonomic (poly)neuropathy,45533017,712882000,Autonomic neuropathy due to type 1 diabetes mellitus,37016767
+E10.51,Type 1 diabetes mellitus with diabetic peripheral angiopathy without gangrene,45547622,421365002,Peripheral circulatory disorder due to type 1 diabetes mellitus,318712
+E10.610,Type 1 diabetes mellitus with diabetic neuropathic arthropathy,45576440,46635009,Type 1 diabetes mellitus,201254
+E10.610,Type 1 diabetes mellitus with diabetic neuropathic arthropathy,45576440,71771000119100,Neuropathic arthropathy due to type 1 diabetes mellitus,45769830
+E10.65,Type 1 diabetes mellitus with hyperglycemia,45533018,46635009,Type 1 diabetes mellitus,201254
+E10.65,Type 1 diabetes mellitus with hyperglycemia,45533018,367991000119101,Hyperglycemia due to type 1 diabetes mellitus,37016348
+E11.21,Type 2 diabetes mellitus with diabetic nephropathy,45591027,420279001,Renal disorder due to type 2 diabetes mellitus,443731
+E11.22,Type 2 diabetes mellitus with diabetic chronic kidney disease,45595797,44054006,Type 2 diabetes mellitus,201826
+E11.22,Type 2 diabetes mellitus with diabetic chronic kidney disease,45595797,771000119108,Chronic kidney disease due to type 2 diabetes mellitus,43531578
+E11.319,Type 2 diabetes mellitus with unspecified diabetic retinopathy without macular edema,45581353,422099009,Disorder of eye due to type 2 diabetes mellitus,443733
+E11.51,Type 2 diabetes mellitus with diabetic peripheral angiopathy without gangrene,45533021,422166005,Peripheral circulatory disorder due to type 2 diabetes mellitus,443729
+E11.649,Type 2 diabetes mellitus with hypoglycemia without coma,45591031,44054006,Type 2 diabetes mellitus,201826
+E11.649,Type 2 diabetes mellitus with hypoglycemia without coma,45591031,120731000119103,Hypoglycemia due to type 2 diabetes mellitus,45757363
+E11.65,Type 2 diabetes mellitus with hyperglycemia,45605405,44054006,Type 2 diabetes mellitus,201826
+E11.65,Type 2 diabetes mellitus with hyperglycemia,45605405,368051000119109,Hyperglycemia due to type 2 diabetes mellitus,37016349
+E11.9,Type 2 diabetes mellitus without complications,35206882,313436004,Type 2 diabetes mellitus without complication,4193704
+E21.1,"Secondary hyperparathyroidism, not elsewhere classified",35206899,91478007,Secondary hyperparathyroidism,138388
+E21.3,"Hyperparathyroidism, unspecified",35206901,66999008,Hyperparathyroidism,133729
+E22.1,Hyperprolactinemia,35206905,237662005,Hyperprolactinemia,4030186
+E22.2,Syndrome of inappropriate secretion of antidiuretic hormone,35206906,55004003,Syndrome of inappropriate vasopressin secretion,4207539
+E53.8,Deficiency of other specified B group vitamins,35206988,47903000,Vitamin B deficiency,437246
+E55.9,"Vitamin D deficiency, unspecified",35206992,34713006,Vitamin D deficiency,436070
+E66.3,Overweight,45586164,238131007,Overweight,437525
+E66.9,"Obesity, unspecified",35207024,414916001,Obesity,433736
+E78.00,"Pure hypercholesterolemia, unspecified",37200312,267432004,Pure hypercholesterolemia,437827
+E78.1,Pure hyperglyceridemia,35207061,267433009,Pure hyperglyceridemia,440360
+E78.5,"Hyperlipidemia, unspecified",35207065,55822004,Hyperlipidemia,432867
+E79.0,Hyperuricemia without signs of inflammatory arthritis and tophaceous disease,35207068,190920002,Hyperuricemia without signs of inflammatory arthritis and tophaceous disease,4098611
+E80.4,Gilbert syndrome,35207075,27503000,Gilbert's syndrome,4099740
+E83.42,Hypomagnesemia,45542778,190855004,Hypomagnesemia,4098604
+E83.51,Hypocalcemia,45561991,5291005,Hypocalcemia,435510
+E86.0,Dehydration,45557144,34095006,Dehydration,435796
+E87.1,Hypo-osmolality and hyponatremia,35207093,267447008,Hypo-osmolality and or hyponatremia,435515
+E87.5,Hyperkalemia,35207097,14140009,Hyperkalemia,434610
+E87.6,Hypokalemia,35207098,43339004,Hypokalemia,437833
+E89.0,Postprocedural hypothyroidism,35207108,27059002,Postoperative hypothyroidism,137820
+F01.50,"Vascular dementia, unspecified severity, without behavioral disturbance, psychotic disturbance, mood disturbance, and anxiety",45591073,16276361000119109,Vascular dementia without behavioral disturbance,37109056
+F05,Delirium due to known physiological condition,35207116,2776000,Delirium,373995
+F10.10,"Alcohol abuse, uncomplicated",45595845,15167005,Alcohol abuse,433753
+F10.21,"Alcohol dependence, in remission",45581405,66590003,Alcohol dependence,435243
+F10.21,"Alcohol dependence, in remission",45581405,191813001,Chronic alcoholism in remission,439005
+F14.10,"Cocaine abuse, uncomplicated",45600707,78267003,Cocaine abuse,432303
+F17.210,"Nicotine dependence, cigarettes, uncomplicated",45562025,56294008,Nicotine dependence,4209423
+F17.290,"Nicotine dependence, other tobacco product, uncomplicated",45600719,56294008,Nicotine dependence,4209423
+F20.0,Paranoid schizophrenia,35207126,64905009,Paranoid schizophrenia,433450
+F25.1,"Schizoaffective disorder, depressive type",35207137,84760002,"Schizoaffective disorder, depressive type",4224940
+F32.9,"Major depressive disorder, single episode, unspecified",35207155,36923009,"Major depression, single episode",4282096
+F41.1,Generalized anxiety disorder,35207170,21897009,Generalized anxiety disorder,434613
+F41.8,Other specified anxiety disorders,35207172,197480006,Anxiety disorder,442077
+F41.9,"Anxiety disorder, unspecified",35207173,197480006,Anxiety disorder,442077
+F91.8,Other conduct disorders,35207270,430909002,Conduct disorder,443617
+G20,Parkinson's disease,35207329,49049000,Parkinson's disease,381270
+G31.84,Mild cognitive impairment of uncertain or unknown etiology,45595932,110352000,Minimal cognitive impairment,439795
+G31.89,Other specified degenerative diseases of nervous system,45600775,52522001,Degenerative brain disorder,375239
+G47.33,Obstructive sleep apnea (adult) (pediatric),45552539,78275009,Obstructive sleep apnea syndrome,442588
+G50.0,Trigeminal neuralgia,35207411,31681005,Trigeminal neuralgia,379801
+G81.91,"Hemiplegia, unspecified affecting right dominant side",45538140,442155009,Hemiplegia of dominant side,40482237
+G81.94,"Hemiplegia, unspecified affecting left nondominant side",45571830,441717007,Hemiplegia of nondominant side,40480429
+G89.21,Chronic pain due to trauma,45547763,431481001,Chronic pain due to injury,4331953
+G89.3,Neoplasm related pain (acute) (chronic),45591201,98921000119102,Pain due to neoplastic disease,44784631
+G93.49,Other encephalopathy,45566910,81308009,Disorder of brain,372887
+H11.30,"Conjunctival hemorrhage, unspecified eye",45600855,21117005,Conjunctival hemorrhage,378756
+H26.9,Unspecified cataract,35207545,193570009,Cataract,375545
+H35.3290,"Exudative age-related macular degeneration, unspecified eye, stage unspecified",37200419,414173003,Exudative age-related macular degeneration,376966
+H35.52,Pigmentary retinal dystrophy,45600913,764939004,Fundus albipunctatus,35622759
+H40.9,Unspecified glaucoma,35207557,23986001,Glaucoma,437541
+H44.522,"Atrophy of globe, left eye",45538295,4229009,Phthisis bulbi,4173943
+H49.21,"Sixth [abducent] nerve palsy, right eye",45596120,398760006,Abducens nerve palsy,381572
+H52.202,"Unspecified astigmatism, left eye",45562272,82649003,Astigmatism,378424
+H53.2,Diplopia,35207570,24982008,Diplopia,373474
+H54.0,"Blindness, both eyes",35207573,193699007,Blindness - both eyes,372906
+H54.51,"Low vision, right eye, normal vision left eye",45543088,339911000119106,"Low vision right eye, normal vision left eye",45757708
+H54.7,Unspecified visual loss,35207576,105597003,Blindness AND/OR vision impairment level,4023310
+H91.10,"Presbycusis, unspecified ear",45605767,49526009,Presbycusis,377574
+H91.93,"Unspecified hearing loss, bilateral",45567154,95820000,Bilateral hearing loss,374367
+I08.0,Rheumatic disorders of both mitral and aortic valves,35207658,16440002,Rheumatic disease of mitral AND aortic valves,4040820
+I10,Essential (primary) hypertension,35207668,59621000,Essential hypertension,320128
+I11.0,Hypertensive heart disease with heart failure,35207669,46113002,Hypertensive heart failure,444101
+I12.0,Hypertensive chronic kidney disease with stage 5 chronic kidney disease or end stage renal disease,35207671,49220004,Hypertensive renal failure,443919
+I12.9,"Hypertensive chronic kidney disease with stage 1 through stage 4 chronic kidney disease, or unspecified chronic kidney disease",35207672,104931000119100,Chronic kidney disease due to hypertension,44782429
+I13.0,"Hypertensive heart and chronic kidney disease with heart failure and stage 1 through stage 4 chronic kidney disease, or unspecified chronic kidney disease",35207673,194779001,Hypertensive heart and renal disease with (congestive) heart failure,439696
+I21.29,ST elevation (STEMI) myocardial infarction involving other sites,45557536,401303003,Acute ST segment elevation myocardial infarction,4296653
+I21.4,Non-ST elevation (NSTEMI) myocardial infarction,35207685,401314000,Acute non-ST segment elevation myocardial infarction,4270024
+I25.10,Atherosclerotic heart disease of native coronary artery without angina pectoris,45586572,451041000124103,Atherosclerosis of coronary artery without angina pectoris,764123
+I25.2,Old myocardial infarction,35207702,1755008,Old myocardial infarction,314666
+I25.82,Chronic total occlusion of coronary artery,45596199,117051000119103,Chronic total occlusion of coronary artery,36712779
+I26.99,Other pulmonary embolism without acute cor pulmonale,45572084,59282003,Pulmonary embolism,440417
+I27.2,Other secondary pulmonary hypertension,35207709,88223008,Secondary pulmonary hypertension,4339214
+I28.0,Arteriovenous fistula of pulmonary vessels,35207711,111289009,Arteriovenous fistula of pulmonary vessels,441593
+I30.0,Acute nonspecific idiopathic pericarditis,35207715,266235007,Acute idiopathic pericarditis,315293
+I31.1,Chronic constrictive pericarditis,35207720,52535005,Chronic constrictive pericarditis,4203625
+I31.3,Pericardial effusion (noninflammatory),35207722,194970009,Pericardial effusion - noninflammatory,4108814
+I31.4,Cardiac tamponade,45581770,35304003,Cardiac tamponade,318450
+I42.0,Dilated cardiomyopathy,35207755,399020009,Dilated cardiomyopathy,4163710
+I42.2,Other hypertrophic cardiomyopathy,35207757,233873004,Hypertrophic cardiomyopathy,4124693
+I44.2,"Atrioventricular block, complete",35207768,27885002,Complete atrioventricular block,320744
+I46.9,"Cardiac arrest, cause unspecified",35207779,410429000,Cardiac arrest,321042
+I47.2,Ventricular tachycardia,35207782,25569003,Ventricular tachycardia,4103295
+I48.0,Paroxysmal atrial fibrillation,35207784,282825002,Paroxysmal atrial fibrillation,4154290
+I48.91,Unspecified atrial fibrillation,45576876,49436004,Atrial fibrillation,313217
+I49.01,Ventricular fibrillation,45562353,71908006,Ventricular fibrillation,437894
+I50.1,"Left ventricular failure, unspecified",35207792,85232009,Left heart failure,439846
+I50.33,Acute on chronic diastolic (congestive) heart failure,45562355,42343007,Congestive heart failure,319835
+I50.33,Acute on chronic diastolic (congestive) heart failure,45562355,443344007,Acute on chronic diastolic heart failure,40481043
+I50.9,"Heart failure, unspecified",35207793,84114007,Heart failure,316139
+I51.89,Other ill-defined heart diseases,45567183,56265001,Heart disease,321588
+I51.9,"Heart disease, unspecified",35207801,56265001,Heart disease,321588
+I61.8,Other nontraumatic intracerebral hemorrhage,35207815,291571000119106,Spontaneous cerebral hemorrhage,43530727
+I63.231,Cerebral infarction due to unspecified occlusion or stenosis of right carotid arteries,45601043,266254007,Carotid artery occlusion,313226
+I63.231,Cerebral infarction due to unspecified occlusion or stenosis of right carotid arteries,45601043,230692004,Infarction - precerebral,4043731
+I63.411,Cerebral infarction due to embolism of right middle cerebral artery,45562367,705128004,Cerebral infarction due to embolism of middle cerebral artery,45772786
+I65.29,Occlusion and stenosis of unspecified carotid artery,45601050,69798007,Carotid artery obstruction,4288310
+I67.82,Cerebral ischemia,45581787,287731003,Cerebral ischemia,374384
+I70.213,"Atherosclerosis of native arteries of extremities with intermittent claudication, bilateral legs",45567208,12236951000119108,Intermittent claudication of bilateral lower limbs co-occurrent and due to atherosclerosis,36717006
+I70.213,"Atherosclerosis of native arteries of extremities with intermittent claudication, bilateral legs",45567208,724440007,Atherosclerosis of artery of lower limb,37110250
+I70.293,"Other atherosclerosis of native arteries of extremities, bilateral legs",45552825,724440007,Atherosclerosis of artery of lower limb,37110250
+I70.90,Unspecified atherosclerosis,45581810,72092001,Arteriosclerotic vascular disease,318443
+I72.2,Aneurysm of renal artery,35207854,36184004,Aneurysm of renal artery,194385
+I73.9,"Peripheral vascular disease, unspecified",35207860,400047006,Peripheral vascular disease,321052
+I74.3,Embolism and thrombosis of arteries of the lower extremities,35207863,1010730002,Thromboembolus of artery of lower limb,605283
+I77.6,"Arteritis, unspecified",35207874,52089001,Arteritis,314659
+I81,Portal vein thrombosis,35207887,17920008,Portal vein thrombosis,199837
+I82.611,Acute embolism and thrombosis of superficial veins of right upper extremity,45601092,132591000119109,Acute thrombosis of superficial vein of upper extremity,44782760
+I87.2,Venous insufficiency (chronic) (peripheral),35207904,20696009,Peripheral venous insufficiency,321596
+I97.131,Postprocedural heart failure following other surgery,45557612,89819002,Cardiac insufficiency during AND/OR resulting from a procedure,4233224
+I97.191,Other postprocedural cardiac functional disturbances following other surgery,45538467,233816003,Postoperative cardiac complication,4121463
+J15.0,Pneumonia due to Klebsiella pneumoniae,35207940,64479007,Pneumonia due to Klebsiella pneumoniae,253790
+J18.9,"Pneumonia, unspecified organism",35207956,233604007,Pneumonia,255848
+J22,Unspecified acute lower respiratory infection,35207970,195742007,Acute lower respiratory tract infection,4307774
+J33.9,"Nasal polyp, unspecified",35207987,736499003,Polyp of nasal cavity and/or nasal sinus,42537251
+J38.02,"Paralysis of vocal cords and larynx, bilateral",45548114,195844002,Bilateral partial vocal cord paralysis,260130
+J38.4,Edema of larynx,35208003,51599000,Edema of larynx,22350
+J43.9,"Emphysema, unspecified",35208022,87433001,Pulmonary emphysema,261325
+J44.0,Chronic obstructive pulmonary disease with (acute) lower respiratory infection,35208023,196001008,Chronic obstructive pulmonary disease with acute lower respiratory infection,4110056
+J44.1,Chronic obstructive pulmonary disease with (acute) exacerbation,35208024,195951007,Acute exacerbation of chronic obstructive airways disease,257004
+J44.9,"Chronic obstructive pulmonary disease, unspecified",35208025,13645005,Chronic obstructive lung disease,255573
+J45.909,"Unspecified asthma, uncomplicated",45562457,707444001,Uncomplicated asthma,45768910
+J47.0,Bronchiectasis with acute lower respiratory infection,45562458,12295008,Bronchiectasis,256449
+J47.1,Bronchiectasis with (acute) exacerbation,45572172,445378003,Acute exacerbation of bronchiectasis,40483342
+J47.9,"Bronchiectasis, uncomplicated",45562459,12295008,Bronchiectasis,256449
+J69.0,Pneumonitis due to inhalation of food and vomit,35208059,415126001,Pneumonitis due to inhaled substance,4187218
+J84.116,Cryptogenic organizing pneumonia,45567274,719218000,Cryptogenic organizing pneumonia,36714118
+J90,"Pleural effusion, not elsewhere classified",35208081,60046008,Pleural effusion,254061
+J91.8,Pleural effusion in other conditions classified elsewhere,45567276,60046008,Pleural effusion,254061
+J93.12,Secondary spontaneous pneumothorax,45562466,328571000119101,Secondary spontaneous pneumothorax,762338
+J96.00,"Acute respiratory failure, unspecified whether with hypoxia or hypercapnia",45605906,409622000,Respiratory failure,4256228
+J96.01,Acute respiratory failure with hypoxia,45567283,709111008,Acute hypoxemic respiratory failure,46271075
+J98.11,Atelectasis,45591566,46621007,Atelectasis,261880
+J98.4,Other disorders of lung,35208105,19829001,Disorder of lung,257907
+K22.2,Esophageal obstruction,35208192,405247003,Obstruction of esophagus,4224926
+K29.80,Duodenitis without bleeding,45543300,72007001,Duodenitis,433516
+K31.7,Polyp of stomach and duodenum,35208245,78809005,Gastric polyp,4303233
+K31.84,Gastroparesis,45591585,235675006,Gastroparesis syndrome,195847
+K31.89,Other diseases of stomach and duodenum,45533586,119291004,Disorder of upper gastrointestinal tract,4000609
+K35.3,Acute appendicitis with localized peritonitis,920137,698294004,Acute appendicitis with localized peritonitis,44784251
+K40.90,"Unilateral inguinal hernia, without obstruction or gangrene, not specified as recurrent",45533588,396232000,Inguinal hernia,4288544
+K42.9,Umbilical hernia without obstruction or gangrene,35208260,396347007,Umbilical hernia,4245842
+K43.2,Incisional hernia without obstruction or gangrene,1569600,236037000,Incisional hernia,198464
+K44.9,Diaphragmatic hernia without obstruction or gangrene,35208263,39839004,Diaphragmatic hernia,201061
+K52.3,Indeterminate colitis,37200611,235746007,Indeterminate colitis,4341633
+K52.89,Other specified noninfective gastroenteritis and colitis,45581903,85919009,Disorder of intestine,201618
+K55.21,Angiodysplasia of colon with hemorrhage,45538537,95540002,Hemorrhage of colon,442190
+K55.21,Angiodysplasia of colon with hemorrhage,45538537,197244008,Angiodysplasia of colon,4055201
+K56.0,Paralytic ileus,35208279,55525008,Paralytic ileus,192357
+K57.10,Diverticulosis of small intestine without perforation or abscess without bleeding,45567315,8114009,Diverticulosis of small intestine,193252
+K57.30,Diverticulosis of large intestine without perforation or abscess without bleeding,45586725,45568004,Diverticulosis of large intestine without diverticulitis,4164898
+K57.31,Diverticulosis of large intestine without perforation or abscess with bleeding,45548163,45568004,Diverticulosis of large intestine without diverticulitis,4164898
+K57.31,Diverticulosis of large intestine without perforation or abscess with bleeding,45548163,1086601000119100,Intestinal hemorrhage with diverticulosis,46269907
+K58.9,Irritable bowel syndrome without diarrhea,35208287,10743008,Irritable bowel syndrome,75576
+K59.00,"Constipation, unspecified",45601182,14760008,Constipation,75860
+K62.6,Ulcer of anus and rectum,35208311,442405009,Ulcer of anorectal structure,40483171
+K63.5,Polyp of colon,35208319,68496003,Polyp of colon,4285898
+K64.0,First degree hemorrhoids,1569658,721703004,Internal hemorrhoids grade I,36715916
+K64.8,Other hemorrhoids,1569664,70153002,Hemorrhoids,195562
+K65.1,Peritoneal abscess,45538543,73962000,Abscess of peritoneum,200757
+K65.9,"Peritonitis, unspecified",35208324,48661000,Peritonitis,196152
+K66.1,Hemoperitoneum,35208326,45626005,Nontraumatic hemoperitoneum,194690
+K68.11,Postprocedural retroperitoneal abscess,45562506,1090321000119103,Postprocedural retroperitoneal abscess,45757263
+K68.12,Psoas muscle abscess,45591604,266463007,Iliopsoas abscess,199073
+K70.30,Alcoholic cirrhosis of liver without ascites,45605952,420054005,Alcoholic cirrhosis,196463
+K75.4,Autoimmune hepatitis,35208356,408335007,Autoimmune hepatitis,200762
+K76.6,Portal hypertension,35208365,34742003,Portal hypertension,192680
+K76.89,Other specified diseases of liver,45605957,235856003,Disease of liver,194984
+K81.0,Acute cholecystitis,35208370,65275009,Acute cholecystitis,198809
+K82.8,Other specified diseases of gallbladder,35208378,39621005,Disorder of gallbladder,192353
+K90.0,Celiac disease,35208401,396331005,Celiac disease,194992
+K91.840,Postprocedural hemorrhage of a digestive system organ or structure following a digestive system procedure,45577006,131148009,Bleeding,437312
+K91.840,Postprocedural hemorrhage of a digestive system organ or structure following a digestive system procedure,45577006,363132006,Gastrointestinal complication of procedure,4178810
+K92.1,Melena,35208413,2901004,Melena,4103703
+L03.113,Cellulitis of right upper limb,45557692,10633911000119107,Cellulitis of right upper limb,759859
+L03.818,Cellulitis of other sites,45557694,128045006,Cellulitis,435613
+L27.0,Generalized skin eruption due to drugs and medicaments taken internally,35208483,200892002,Generalized skin eruption caused by drug and medicament,4064036
+L80,Vitiligo,35208655,56727007,Vitiligo,138502
+L97.919,Non-pressure chronic ulcer of unspecified part of right lower leg with unspecified severity,45572302,10641391000119104,Chronic ulcer of skin of lower leg,46269757
+M08.29,"Juvenile rheumatoid arthritis with systemic onset, multiple sites",45601299,201796004,Systemic onset juvenile chronic arthritis,4116447
+M08.29,"Juvenile rheumatoid arthritis with systemic onset, multiple sites",45601299,287006005,Rheumatoid arthritis of multiple joints,4117686
+M10.9,"Gout, unspecified",35208756,90560007,Gout,440674
+M12.9,"Arthropathy, unspecified",45586884,399269003,Arthropathy,73553
+M15.9,"Polyosteoarthritis, unspecified",35208765,396275006,Osteoarthritis,80180
+M19.011,"Primary osteoarthritis, right shoulder",45591743,201831003,"Localized, primary osteoarthritis of the shoulder region",73840
+M19.91,"Primary osteoarthritis, unspecified site",45567474,239862000,Idiopathic osteoarthritis,4035439
+M1A.0221,"Idiopathic chronic gout, left elbow, with tophus (tophi)",45601357,24595009,Primary gout,4084229
+M1A.0221,"Idiopathic chronic gout, left elbow, with tophus (tophi)",45601357,402469004,Gouty tophus,4299408
+M20.12,"Hallux valgus (acquired), left foot",45582081,65358001,Acquired hallux valgus,75911
+M23.321,"Other meniscus derangements, posterior horn of medial meniscus, right knee",45601393,5313005,Derangement of posterior horn of medial meniscus,75051
+M23.8X2,Other internal derangements of left knee,45553127,63643000,Derangement of knee,76786
+M32.9,"Systemic lupus erythematosus, unspecified",35208827,55464009,Systemic lupus erythematosus,257628
+M35.2,Behcet's disease,35208833,310701003,Behcet's syndrome,436642
+M41.20,"Other idiopathic scoliosis, site unspecified",45572451,203639008,Idiopathic scoliosis,4069935
+M47.12,"Other spondylosis with myelopathy, cervical region",45562732,1156963006,Myelopathy due to cervical spondylosis,608177
+M51.26,"Other intervertebral disc displacement, lumbar region",45606242,202708005,Prolapsed lumbar intervertebral disc,4068482
+M54.5,Low back pain,35208969,279039007,Low back pain,194133
+M81.0,Age-related osteoporosis without current pathological fracture,35209038,64859006,Osteoporosis,80502
+M84.48XA,"Pathological fracture, other site, initial encounter for fracture",45562894,268029009,Pathological fracture,73571
+M84.58XA,"Pathological fracture in neoplastic disease, other specified site, initial encounter for fracture",45567728,203449003,Pathologic fracture of bone at site of neoplasm,4067766
+M85.9,"Disorder of bone density and structure, unspecified",35209099,76069003,Disorder of bone,75909
+M87.052,Idiopathic aseptic necrosis of left femur,45572652,445157005,Aseptic necrosis of bone of hip,40482444
+N04.9,Nephrotic syndrome with unspecified morphologic changes,35209214,52254009,Nephrotic syndrome,195314
+N10,Acute pyelonephritis,35209246,36689008,Acute pyelonephritis,4280571
+N17.0,Acute kidney failure with tubular necrosis,35209269,35455006,Acute tubular necrosis,444044
+N17.9,"Acute kidney failure, unspecified",35209273,14669001,Acute renal failure syndrome,197320
+N18.3,"Chronic kidney disease, stage 3 (moderate)",35209276,433144002,Chronic kidney disease stage 3,443597
+N18.4,"Chronic kidney disease, stage 4 (severe)",35209277,431857002,Chronic kidney disease stage 4,443612
+N18.5,"Chronic kidney disease, stage 5",35209278,433146000,Chronic kidney disease stage 5,443611
+N18.6,End stage renal disease,45548653,46177005,End-stage renal disease,193782
+N18.9,"Chronic kidney disease, unspecified",35209279,709044004,Chronic kidney disease,46271022
+N20.0,Calculus of kidney,35209281,95570007,Kidney stone,201620
+N28.1,"Cyst of kidney, acquired",35209298,105999006,Acquired renal cystic disease,194686
+N39.0,"Urinary tract infection, site not specified",35209324,68566005,Urinary tract infectious disease,81902
+N39.498,Other specified urinary incontinence,45592135,165232002,Urinary incontinence,197672
+N40.0,Benign prostatic hyperplasia without lower urinary tract symptoms,45539047,266569009,Benign prostatic hyperplasia,198803
+N41.0,Acute prostatitis,1571520,79411002,Acute prostatitis,193522
+N81.3,Complete uterovaginal prolapse,35209403,63871009,Third degree uterine prolapse,193528
+N84.1,Polyp of cervix uteri,35209424,65576009,Polyp of cervix,4280498
+Q24.8,Other specified congenital malformations of heart,35210830,13213009,Congenital heart disease,312723
+Q25.0,Patent ductus arteriosus,35210832,83330001,Patent ductus arteriosus,315922
+Q44.6,Cystic disease of liver,35210961,72925005,Congenital cystic disease of liver,197654
+Q61.3,"Polycystic kidney, unspecified",35211020,82525005,Multiple congenital cysts of kidney,4220238
+Q89.09,Congenital malformations of spleen,45582685,57497006,Congenital anomaly of spleen,193308
+R04.2,Hemoptysis,35211272,66857006,Hemoptysis,261687
+R10.13,Epigastric pain,45558454,79922009,Epigastric pain,197381
+R13.19,Other dysphagia,45592409,40739000,Dysphagia,31317
+R19.7,"Diarrhea, unspecified",45534435,62315008,Diarrhea,196523
+R26.89,Other abnormalities of gait and mobility,45597175,22325002,Abnormal gait,437643
+R29.705,NIHSS score 5,37201045,450743008,National Institutes of Health stroke scale score,42872751
+R29.710,NIHSS score 10,37201051,450743008,National Institutes of Health stroke scale score,42872751
+R29.720,NIHSS score 20,37201062,450743008,National Institutes of Health stroke scale score,42872751
+R31.0,Gross hematuria,45553727,197941005,Frank hematuria,75004
+R33.8,Other retention of urine,45548960,267064002,Retention of urine,192450
+R33.9,"Retention of urine, unspecified",45587508,267064002,Retention of urine,192450
+R40.4,Transient alteration of awareness,45587518,365933000,Mental alertness - finding,4275359
+R42,Dizziness and giddiness,35211350,271789005,Dizziness and giddiness,433316
+R43.2,Parageusia,35211353,271801002,Taste sense altered,436235
+R47.1,Dysarthria and anarthria,35211377,8011004,Dysarthria,4196636
+R50.81,Fever presenting with conditions classified elsewhere,45606818,386661006,Fever,437663
+R55,Syncope and collapse,35211391,419045004,Loss of consciousness,372448
+R60.1,Generalized edema,35211401,271808008,"Edema, generalized",4155910
+R65.21,Severe sepsis with septic shock,45577803,76571007,Septic shock,196236
+R74.0,Nonspecific elevation of levels of transaminase and lactic acid dehydrogenase [LDH],35211421,274774002,Elevated level of transaminase and lactic acid dehydrogenase,436238
+R78.81,Bacteremia,45587526,5758002,Bacteremia,132736
+R79.1,Abnormal coagulation profile,45592434,165563002,Coag./bleeding tests abnormal,4306267
+R82.71,Bacteriuria,37201114,61373006,Bacteriuria,4265485
+R82.99,Other abnormal findings in urine,45563325,102866000,Abnormal urine,4009585
+R91.8,Other nonspecific abnormal finding of lung field,45577823,274533004,Abnormal findings on diagnostic imaging of lung,437677
+S20.212A,"Contusion of left front wall of thorax, initial encounter",45607028,10050004,Contusion of chest,81175
+S30.0XXA,"Contusion of lower back and pelvis, initial encounter",45607117,36787001,Contusion of trunk,195977
+S32.431A,"Displaced fracture of anterior column [iliopubic] of right acetabulum, initial encounter for closed fracture",45534836,208148000,"Closed fracture acetabulum, anterior column",4008519
+S32.601A,"Unspecified fracture of right ischium, initial encounter for closed fracture",45558873,36417005,Closed fracture of ischium,80861
+S32.89XD,"Fracture of other parts of pelvis, subsequent encounter for fracture with routine healing",45587895,77493009,Fracture of pelvis,4300192
+S83.122A,"Posterior subluxation of proximal end of tibia, left knee, initial encounter",45555435,263058005,Subluxation of knee joint,4136565
+T36.1X5A,"Adverse effect of cephalosporins and other beta-lactam antibiotics, initial encounter",45599387,419885006,Beta lactam adverse reaction,4168834
+T40.2X5A,"Adverse effect of other opioids, initial encounter",45589752,292045009,Opioid analgesic adverse reaction,432789
+T42.4X5A,"Adverse effect of benzodiazepines, initial encounter",45599463,870677001,Adverse reaction to benzodiazepine,3661779
+T45.1X5A,"Adverse effect of antineoplastic and immunosuppressive drugs, initial encounter",45594673,62014003,Adverse reaction to drug,441207
+T46.2X5A,"Adverse effect of other antidysrhythmic drugs, initial encounter",45551238,293436009,Antiarrhythmic drug adverse reaction,443371
+T81.4XXA,"Infection following a procedure, initial encounter",45580391,12246311000119109,Postprocedural infection,36712821
+T82.867A,"Thrombosis due to cardiac prosthetic devices, implants and grafts, initial encounter",45541838,24346005,"Thrombus due to any device, implant AND/OR graft",4085586
+T82.868A,"Thrombosis due to vascular prosthetic devices, implants and grafts, initial encounter",45609345,24346005,"Thrombus due to any device, implant AND/OR graft",4085586
+T82.897A,"Other specified complication of cardiac prosthetic devices, implants and grafts, initial encounter",45565845,473023007,Complication associated with device,43021974
+T85.611A,"Breakdown (mechanical) of intraperitoneal dialysis catheter, initial encounter",45575617,431028002,Mechanical complication of peritoneal dialysis catheter,440302
+T86.11,Kidney transplant rejection,45609393,236570004,Renal transplant rejection,4128369
+T86.19,Other complication of kidney transplant,45537090,58797008,Disorder of transplanted kidney,199991
+T86.41,Liver transplant rejection,45551553,235911006,Liver transplant rejection,4341657
+T86.891,Other transplanted tissue failure,45551559,269295009,Transplanted organ failure,4151240
+T87.89,Other complications of amputation stump,45604592,240276001,Disorder of amputation stump,4345680
+W18.30XA,"Fall on same level, unspecified, initial encounter",45542184,33036003,Fall on same level,4140830
+W18.39XD,"Other fall on same level, subsequent encounter",45542185,33036003,Fall on same level,4140830
+Y83.0,"Surgical operation with transplant of whole organ as the cause of abnormal reaction of the patient, or of later complication, without mention of misadventure at the time of the procedure",35224804,70209001,Late effect of complications of procedure,4322175
+Y83.1,"Surgical operation with implant of artificial internal device as the cause of abnormal reaction of the patient, or of later complication, without mention of misadventure at the time of the procedure",35224805,88797001,Complication of surgical procedure,434547
+Y83.1,"Surgical operation with implant of artificial internal device as the cause of abnormal reaction of the patient, or of later complication, without mention of misadventure at the time of the procedure",35224805,95869003,Adverse effect of prosthetic device,4320824
+Y83.5,"Amputation of limb(s) as the cause of abnormal reaction of the patient, or of later complication, without mention of misadventure at the time of the procedure",35224809,735915008,Complication following amputation of limb,42536891
+Y83.8,"Other surgical procedures as the cause of abnormal reaction of the patient, or of later complication, without mention of misadventure at the time of the procedure",35224811,88797001,Complication of surgical procedure,434547
+Y84.1,"Kidney dialysis as the cause of abnormal reaction of the patient, or of later complication, without mention of misadventure at the time of the procedure",35224814,70209001,Late effect of complications of procedure,4322175
+Y84.8,"Other medical procedures as the cause of abnormal reaction of the patient, or of later complication, without mention of misadventure at the time of the procedure",35224821,116224001,Complication of procedure,442019
+Y95,Nosocomial condition,35225031,35688006,Complication of medical care,440005
+Z00.00,Encounter for general adult medical examination without abnormal findings,45552054,308335008,Patient encounter procedure,4203722
+Z15.09,Genetic susceptibility to other malignant neoplasm,45590702,47708004,Genetic predisposition,4166231
+Z16.12,Extended spectrum beta lactamase (ESBL) resistance,45566400,31438003,Drug resistance,4150981
+Z16.35,Resistance to multiple antimicrobial drugs,45605109,31438003,Drug resistance,4150981
+Z21,Asymptomatic human immunodeficiency virus [HIV] infection status,35225089,91947003,Asymptomatic human immunodeficiency virus infection,4241530
+Z22.1,Carrier of other intestinal infectious diseases,35225091,66598005,Infectious disease carrier,4280828
+Z22.39,Carrier of other specified bacterial diseases,45585811,56038003,Staphylococcal infectious disease,435459
+Z45.010,Encounter for checking and testing of cardiac pacemaker pulse generator [battery],45547315,308335008,Patient encounter procedure,4203722
+Z51.6,Encounter for desensitization to allergens,37202294,308335008,Patient encounter procedure,4203722
+Z53.09,Procedure and treatment not carried out because of other contraindication,45561635,416237000,Procedure not done,4168192
+Z53.32,Thoracoscopic surgical procedure converted to open procedure,37202297,711454001,Failed procedure using minimal access approach converted to open procedure,46272989
+Z53.8,Procedure and treatment not carried out for other reasons,35225162,416237000,Procedure not done,4168192
+Z59.3,Problems related to living in residential institution,35225202,15929301000119104,Problem related to living in residential institution,765265
+Z60.2,Problems related to living alone,35225211,105529008,Lives alone,4023168
+Z63.8,Other specified problems related to primary support group,35225243,248539004,Family problems,4094126
+Z68.29,"Body mass index [BMI] 29.0-29.9, adult",45605144,162863004,Body mass index 25-29 - overweight,4060705
+Z74.3,Need for continuous supervision,35225286,105507009,Patient dependence on care provider,4022076
+Z77.22,Contact with and (suspected) exposure to environmental tobacco smoke (acute) (chronic),,,,
+Z79.01,Long term (current) use of anticoagulants,45552108,711150003,Long-term current use of anticoagulant,46273937
+Z79.02,Long term (current) use of antithrombotics/antiplatelets,45561654,710814002,Long-term current use of drug therapy,46272450
+Z79.4,Long term (current) use of insulin,45576185,710815001,Long-term current use of insulin,46272451
+Z79.52,Long term (current) use of systemic steroids,45581074,710816000,Long-term current use of steroid,46272452
+Z79.82,Long term (current) use of aspirin,45537677,131531000119103,Long-term current use of aspirin,36717001
+Z79.84,Long term (current) use of oral hypoglycemic drugs,37202300,710814002,Long-term current use of drug therapy,46272450
+Z80.0,Family history of malignant neoplasm of digestive organs,35225305,430813008,Family history of malignant neoplasm of digestive organ,4334494
+Z81.8,Family history of other mental and behavioral disorders,35225318,160324006,Family history of mental disorder,4051568
+Z85.038,Personal history of other malignant neoplasm of large intestine,,,,
+Z85.048,"Personal history of other malignant neoplasm of rectum, rectosigmoid junction, and anus",,,,
+Z85.05,Personal history of malignant neoplasm of liver,,,,
+Z85.118,Personal history of other malignant neoplasm of bronchus and lung,,,,
+Z85.21,Personal history of malignant neoplasm of larynx,,,,
+Z85.3,Personal history of malignant neoplasm of breast,,,,
+Z85.46,Personal history of malignant neoplasm of prostate,,,,
+Z85.51,Personal history of malignant neoplasm of bladder,,,,
+Z85.528,Personal history of other malignant neoplasm of kidney,,,,
+Z85.820,Personal history of malignant melanoma of skin,,,,
+Z85.89,Personal history of malignant neoplasm of other organs and systems,,,,
+Z86.010,Personal history of colonic polyps,,,,
+Z86.11,Personal history of tuberculosis,,,,
+Z86.61,Personal history of infections of the central nervous system,,,,
+Z86.711,Personal history of pulmonary embolism,,,,
+Z86.718,Personal history of other venous thrombosis and embolism,,,,
+Z86.73,"Personal history of transient ischemic attack (TIA), and cerebral infarction without residual deficits",,,,
+Z87.11,Personal history of peptic ulcer disease,,,,
+Z87.440,Personal history of urinary (tract) infections,,,,
+Z87.81,Personal history of (healed) traumatic fracture,,,,
+Z87.820,Personal history of traumatic brain injury,,,,
+Z87.891,Personal history of nicotine dependence,,,,
+Z88.0,Allergy status to penicillin,35225363,91936005,Allergy to penicillin,4240903
+Z88.1,Allergy status to other antibiotic agents,35225364,416098002,Allergy to drug,439224
+Z88.2,Allergy status to sulfonamides,35225365,91939003,Allergy to sulfonamide,4241527
+Z88.6,Allergy status to analgesic agent,35225369,416098002,Allergy to drug,439224
+Z88.8,"Allergy status to other drugs, medicaments and biological substances",35225371,416098002,Allergy to drug,439224
+Z89.029,Acquired absence of unspecified finger(s),45576205,71358006,Absent finger,4323582
+Z89.029,Acquired absence of unspecified finger(s),45576205,737303004,Acquired absence of organ,42537748
+Z89.411,Acquired absence of right great toe,45566472,249820005,Absence of toe,4093531
+Z89.411,Acquired absence of right great toe,45566472,737303004,Acquired absence of organ,42537748
+Z89.412,Acquired absence of left great toe,45600369,249820005,Absence of toe,4093531
+Z89.412,Acquired absence of left great toe,45600369,737303004,Acquired absence of organ,42537748
+Z89.421,Acquired absence of other right toe(s),45581085,249820005,Absence of toe,4093531
+Z89.421,Acquired absence of other right toe(s),45581085,737303004,Acquired absence of organ,42537748
+Z89.422,Acquired absence of other left toe(s),45605169,249820005,Absence of toe,4093531
+Z89.422,Acquired absence of other left toe(s),45605169,737303004,Acquired absence of organ,42537748
+Z89.511,Acquired absence of right leg below knee,45595557,723722000,Absence of lower limb,37109843
+Z89.511,Acquired absence of right leg below knee,45595557,737303004,Acquired absence of organ,42537748
+Z89.512,Acquired absence of left leg below knee,45537692,723722000,Absence of lower limb,37109843
+Z89.512,Acquired absence of left leg below knee,45537692,737303004,Acquired absence of organ,42537748
+Z90.10,Acquired absence of unspecified breast and nipple,,,,
+Z90.12,Acquired absence of left breast and nipple,,,,
+Z90.2,Acquired absence of lung [part of],35225375,275507003,Absence of lung,4170145
+Z90.2,Acquired absence of lung [part of],35225375,737303004,Acquired absence of organ,42537748
+Z90.3,Acquired absence of stomach [part of],35225376,29384001,Disorder of stomach,201891
+Z90.3,Acquired absence of stomach [part of],35225376,737303004,Acquired absence of organ,42537748
+Z90.49,Acquired absence of other specified parts of digestive tract,45547372,53619000,Disorder of digestive system,4201745
+Z90.49,Acquired absence of other specified parts of digestive tract,45547372,737303004,Acquired absence of organ,42537748
+Z90.5,Acquired absence of kidney,35225378,249582007,Absent kidney,4092879
+Z90.5,Acquired absence of kidney,35225378,737303004,Acquired absence of organ,42537748
+Z90.79,Acquired absence of other genital organ(s),,,,
+Z91.041,Radiographic dye allergy status,45561670,1104821000000102,Allergy to diagnostic dye,36685919
+Z91.09,"Other allergy status, other than to drugs and biological substances",45590768,609328004,Allergic disposition,43530807
+Z91.19,Patient's noncompliance with other medical treatment and regimen,45585879,7058009,Noncompliance with treatment,4322482
+Z91.81,History of falling,,,,
+Z92.21,Personal history of antineoplastic chemotherapy,,,,
+Z92.25,Personal history of immunosuppression therapy,,,,
+Z92.3,Personal history of irradiation,,,,
+Z93.2,Ileostomy status,35225398,302111002,Ileostomy present,4201717
+Z93.3,Colostomy status,35225399,302112009,Colostomy present,4201390
+Z94.0,Kidney transplant status,35225404,737295003,Transplanted kidney present,42539502
+Z94.4,Liver transplant status,35225408,737297006,Transplanted liver present,42537742
+Z94.7,Corneal transplant status,35225411,737299009,Transplanted cornea present,42537744
+Z94.83,Pancreas transplant status,,,,
+Z94.84,Stem cells transplant status,,,,
+Z95.0,Presence of cardiac pacemaker,35225413,703398004,Cardiac implant in situ,45766277
+Z95.1,Presence of aortocoronary bypass graft,35225414,737276005,Aortocoronary bypass graft present,42537729
+Z95.2,Presence of prosthetic heart valve,35225415,739026008,Transplanted heart valve present,42538119
+Z95.3,Presence of xenogenic heart valve,35225416,449843004,Biologic cardiac valve prosthesis in situ,42709971
+Z95.5,Presence of coronary angioplasty implant and graft,35225418,737278006,Coronary artery graft present,42537730
+Z95.810,Presence of automatic (implantable) cardiac defibrillator,,,,
+Z95.820,Peripheral vascular angioplasty status with implants and grafts,,,,
+Z95.828,Presence of other vascular implants and grafts,,,,
+Z96.0,Presence of urogenital implants,,,,
+Z96.642,Presence of left artificial hip joint,,,,
+Z98.0,Intestinal bypass and anastomosis status,,,,
+Z98.84,Bariatric surgery status,,,,
+Z99.2,Dependence on renal dialysis,35225436,105502003,Dependence on renal dialysis,4019967
+Z99.3,Dependence on wheelchair,35225437,105503008,Dependence on wheelchair,4022073
+Z99.89,Dependence on other enabling machines and devices,45595570,105501005,Dependence on enabling machine or device,437758
