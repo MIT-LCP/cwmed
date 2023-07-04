@@ -111,7 +111,7 @@ class VocabTranslator:
         >>> # Observe the source vocab, e.g. icd10 code 'A04.4' in the source file.
         >>> source_df = vocab._read_source_file()
         >>> source_df[source_df["icd10"] == "A04.4"]
-            icd10
+        	icd10
         0	A04.4
         """
         df = pd.read_csv(self.source_filepath,
@@ -202,10 +202,10 @@ class VocabTranslator:
         >>> source_to_concept_id_df = vocab._map_source_to_source_concept_id()
         >>> source_to_concept_id_df = source_to_concept_id_df[source_to_concept_id_df['icd10'] == 'A04.4']
         >>> source_to_concept_id_df
-         		concept_id	vocabulary_id	concept_class_id	 domain_id	concept_code	 concept_name	   standard_concept
-            0	35205417	 ICD10CM	   4-char billing code	 Condition	  A04.4	         Other intestinal         NaN
-                                                                                             Escherichia coli
-                                                                                             infections                                                                                 infections	
+    	icd10	concept_id	concept_name	domain_id	vocabulary_id	concept_class_id	standard_concept	concept_code	valid_start_date	valid_end_date	invalid_reason
+    0	A04.4	35205417	Other intestinal
+                            Escherichia coli
+                            infections	Condition	ICD10CM	4-char billing code	NaN	A04.4	20070101.0	20991231.0	NaN	
         """
         df = self._read_source_file().merge(self.concept_file, how='left',
                                             left_on=self.source_code_col, 
