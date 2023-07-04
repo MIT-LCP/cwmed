@@ -8,9 +8,9 @@ Crosswalk medical faciliates the conversion of clinical terminology between two 
 
 Crosswalk medical is a Python package to assist the semantic interoperability when federating clinical databases. The objective of the package is to guide the crosswalk from one standard source vocabulary to a target vocabulary by defining concepts and utilizing semantic relationships avaliable via downloadable source and target dictionaries on [Athena](https://athena.ohdsi.org/vocabulary/list) that capture associations between two different concepts.
 
-See section https://github.com/xborrat/medical-standard-voc-translator/blob/main/README.md##download-vocabs for downloading source and target vocabularies.
+See [Downloading Source and Target Vocabularies](#download-vocabs) section for downloading source and target vocabularies.
 
-See section https://github.com/xborrat/medical-standard-voc-translator/blob/main/README.md##install for package installation.
+See [Installation](#install) section for package installation.
 
 See [demo.ipynb](https://github.com/xborrat/medical-standard-voc-translator/blob/main/example_crosswalk.ipynb) notebook file for example use cases.
 
