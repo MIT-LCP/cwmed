@@ -12,6 +12,17 @@ import cwmed as cw
 class TestCW(unittest.TestCase):
     
     def setUp(self):
+        """
+        Initializes a VocabTranslator object with the following details:
+            - Source file path: 'tests/data/input/icd10.csv' (column 'icd10' contains the ICD10 codes)
+            - Concept mapping file: 'tests/data/input/icd10_to_snomed_concept.csv'
+            - Vocabulary values: Source as 'ICD10CM' and target as 'SNOMED'
+            - Relationship mapping file: 'tests/data/input/icd10_to_snomed_concept_relationship.csv'
+        
+        Additionally, sets up a temporary directory for testing. Within this directory, an output file named 
+        'output.csv' is specified, and its complete path is determined and stored for later use.
+        """
+
         self.vocab = cw.VocabTranslator(source_filepath = 'tests/data/input/icd10.csv',
                         source_code_col = 'icd10',
                         concept_filepath = 'tests/data/input/icd10_to_snomed_concept.csv',
@@ -24,11 +35,15 @@ class TestCW(unittest.TestCase):
         self.output_path = os.path.join(self.temp_path_to_directory,self.output_file)
 
     def tearDown(self):
+        """
+        Deletes the temporary directory created during test setup.
+        """
+
         self.temp_directory.cleanup()
 
     def test_crosswalk_between_icd10_snomed(self):
         """
-        Test that the source code, e.g. icd10 code of 'A04.4' from the source file 
+        Tests that the source code, e.g. icd10 code of 'A04.4' from the source file 
         is mapped to the expected target standardized code, e.g. snomed code, '111839008'
         in the source to target file.
         """
@@ -69,11 +84,18 @@ class TestCW(unittest.TestCase):
         assert_frame_equal(result, expected)
 
     def _compare_csvfiles(self,file1,file2):
+        """
+        Compares two CSV files and asserts that they are identical.
+        
+        Args:
+            file1 (str): The path to the first CSV file.
+            file2 (str): The path to the second CSV file.
+        """
         self.assertTrue(filecmp.cmp(file1, file2))
 
     def test_get_unique_vocab_returns_expected_output_as_np_ndarray(self):
         """
-        Test the get_unique_vocab function from the
+        Tests the get_unique_vocab function from the
         cw module. It asserts that the output of the function is of the same
         type and has the same elements as the expected output, which is an array
         containing the strings 'ICD10CM' and 'SNOMED'. The function is passed the
