@@ -22,8 +22,8 @@ dependencies = [
 ]
 
 [project.urls]
-"Homepage" = "https://github.com/xborrat/medical-standard-voc-translator"
-"Bug Tracker" = "https://github.com/xborrat/medical-standard-voc-translator"
+"Homepage" = "https://github.com/MIT-LCP/cwmed"
+"Bug Tracker" = "https://github.com/MIT-LCP/cwmed"
 
 [tool.setuptools]
 packages=["cwmed"]
