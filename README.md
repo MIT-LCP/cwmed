@@ -12,7 +12,7 @@ See [Downloading Source and Target Vocabularies](#download-vocabs) section for d
 
 See [Installation](#install) section for package installation.
 
-See [demo.ipynb](https://github.com/xborrat/medical-standard-voc-translator/blob/main/example_crosswalk.ipynb) notebook file for example use cases.
+See [demo.ipynb](https://github.com/MIT-LCP/cwmed/blob/main/demo.ipynb) notebook file for example use cases.
 
 ## <a id="install"></a>Installation
 
