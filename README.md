@@ -16,7 +16,7 @@ See [demo.ipynb](https://github.com/xborrat/medical-standard-voc-translator/blob
 
 ## <a id="install"></a>Installation
 
-The distribution is hosted on PyPI at: https://pypi.python.org/pypi/. The package can be directly installed from PyPI using pip:
+The distribution is hosted on PyPI at: https://pypi.org/project/cwmed/0.1.0/. The package can be directly installed from PyPI using pip:
 
 ```sh
 pip install cwmed
